@@ -1,1 +1,6 @@
+/*Boostrap Variable Overrides*/
+$primary: #002c60;
+
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import 'variables';
+@import 'header';
