@@ -1,0 +1,30 @@
+.index-primary,
+.index-secondary,
+.index-accent,
+.index-section {
+  @include make-row();
+  padding: 2rem 0;
+  box-sizing: border-box;
+
+  button {
+    margin-right: 2rem;
+    min-width: 12.5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+
+  .headline {
+    @include make-col-ready();
+    @include make-col(6);
+    @include make-col-offset(1);
+    background-color: $red;
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
+.index-primary { background-color: $primary; }
+.index-secondary { background-color: $secondary; }
+.index-accent { background-color: $red; }

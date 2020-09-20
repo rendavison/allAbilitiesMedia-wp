@@ -13,8 +13,8 @@
       <section class="primary">
         <div id="logo"></div>
         <section class="top-links">
-          <button type="button" class="btn btn-primary btn-lg">news</div>
-          <button type="button" class="btn btn-primary btn-lg">get involved</div>
+          <button type="button" class="btn btn-primary btn-lg">news</button>
+          <button type="button" class="btn btn-primary btn-lg">get involved</button>
         </section>
       </section>
       <section class="secondary">
