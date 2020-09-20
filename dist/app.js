@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/remy/.bitnami/stackman/machines/xampp/volumes/root/htdocs/allAbilitiesMedia/wp-content/themes/allAbilitiesMedia/src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! /Users/remy/.bitnami/stackman/machines/xampp/volumes/root/htdocs/allAbilitiesMedia/wp-content/themes/allAbilitiesMedia/src/app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/remydavison/.bitnami/stackman/machines/xampp/volumes/root/htdocs/allAbilities/wp-content/themes/allAbilitiesMedia-wp/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /Users/remydavison/.bitnami/stackman/machines/xampp/volumes/root/htdocs/allAbilities/wp-content/themes/allAbilitiesMedia-wp/src/app.scss */"./src/app.scss");
 
 
 /***/ })
