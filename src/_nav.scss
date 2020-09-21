@@ -4,13 +4,14 @@ nav {
   .menu {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
   }
 
   /*Logo and Buttons Row*/
   .primary {
     @include make-row();
     height: 6rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
 
     #logo {
       @include make-col-ready();
@@ -20,17 +21,25 @@ nav {
       background-color: $teal;
     }
 
-    .top-links {
+    .menu-top-buttons-container {
       @include make-col-ready();
-      @include make-col(6);
-      @include make-col-offset(6);
+      @include make-col(5);
+      @include make-col-offset(7);
 
-      button {
-        min-width: 25%;
+      .menu {
+        justify-content: space-around;
+      }
+
+      li {
+        min-width: 33.333%;
         font-size: 1.5rem;
         font-weight: bold;
         text-transform: uppercase;
         border-radius: 0;
+
+        a {
+          color: white;
+        }
       }
     }
   }
@@ -49,6 +58,10 @@ nav {
       @include make-col-offset(7);
       padding-top: 0.5rem;
       width: 100%;
+
+      .menu {
+        justify-content: space-between;
+      }
 
       li a {
         margin-right: 2rem;

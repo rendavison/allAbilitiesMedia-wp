@@ -10923,7 +10923,6 @@ nav {
 nav .menu {
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
 }
 
 nav .primary {
@@ -10932,6 +10931,8 @@ nav .primary {
   margin-right: -15px;
   margin-left: -15px;
   height: 6rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
 }
 
 nav .primary #logo {
@@ -10946,22 +10947,30 @@ nav .primary #logo {
   background-color: #2c7d7d;
 }
 
-nav .primary .top-links {
+nav .primary .menu-top-buttons-container {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-left: 50%;
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+  margin-left: 58.3333333333%;
 }
 
-nav .primary .top-links button {
-  min-width: 25%;
+nav .primary .menu-top-buttons-container .menu {
+  justify-content: space-around;
+}
+
+nav .primary .menu-top-buttons-container li {
+  min-width: 33.333%;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 0;
+}
+
+nav .primary .menu-top-buttons-container li a {
+  color: white;
 }
 
 nav .secondary {
@@ -10985,6 +10994,10 @@ nav .secondary .menu-secondary-navigation-container {
   margin-left: 58.3333333333%;
   padding-top: 0.5rem;
   width: 100%;
+}
+
+nav .secondary .menu-secondary-navigation-container .menu {
+  justify-content: space-between;
 }
 
 nav .secondary .menu-secondary-navigation-container li a {
