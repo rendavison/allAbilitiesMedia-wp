@@ -1,8 +1,6 @@
 /*Boostrap Variable Overrides*/
-$primary: #002c60;
-$secondary: #2c7d7d;
-
-@import 'node_modules/bootstrap/scss/bootstrap';
 @import 'variables';
+@import 'node_modules/bootstrap/scss/bootstrap';
 @import 'nav';
 @import 'front-page';
+@import 'footer';

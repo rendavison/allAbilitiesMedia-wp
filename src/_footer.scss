@@ -1,0 +1,27 @@
+footer {
+  @include make-row();
+  padding: 3rem 0;
+  background-color: $primary;
+
+  img {
+    @include make-col-ready();
+    @include make-col(2);
+    @include make-col-offset(1);
+  }
+
+  .footer-links {
+    @include make-col-ready();
+    @include make-col(3);
+    @include make-col-offset(1);
+    padding-left: 0;
+    list-style-type: none;
+    color: white;
+
+    a {
+      font-size: 1.25rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+}

@@ -6,6 +6,8 @@
     <title>All Abilities Media</title>
 
     <?php wp_head();?>
+    <!-- Import Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kma0tcc.css">
   </head>
   <body>
 
