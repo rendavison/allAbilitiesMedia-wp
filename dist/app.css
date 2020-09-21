@@ -10920,6 +10920,12 @@ nav {
   /*Other links*/
 }
 
+nav .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
 nav .primary {
   display: flex;
   flex-wrap: wrap;
@@ -10951,7 +10957,6 @@ nav .primary .top-links {
 }
 
 nav .primary .top-links button {
-  margin-right: 2rem;
   min-width: 25%;
   font-size: 1.5rem;
   font-weight: bold;
@@ -10967,22 +10972,22 @@ nav .secondary {
   height: 3rem;
   background-color: #002c60;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
-nav .secondary .nav-links {
+nav .secondary .menu-secondary-navigation-container {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-left: 50%;
-  justify-content: space-between;
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+  margin-left: 58.3333333333%;
   padding-top: 0.5rem;
   width: 100%;
 }
 
-nav .secondary .nav-links a {
+nav .secondary .menu-secondary-navigation-container li a {
   margin-right: 2rem;
   font-size: 1.25rem;
   font-weight: bold;

@@ -10,7 +10,27 @@
     <link rel="stylesheet" href="https://use.typekit.net/kma0tcc.css">
   </head>
   <body>
-
+    <nav>
+      <section class="primary">
+        <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'top-buttons'
+          )
+        );
+        ?>
+      </section>
+      <section class="secondary">
+        <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'secondary-nav'
+          )
+        );
+        ?>
+      </section>
+    </nav>
+<!--
     <nav>
       <section class="primary">
         <div id="logo"></div>
@@ -28,3 +48,4 @@
         </section>
       </section>
     </nav>
+-->
