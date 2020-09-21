@@ -11138,7 +11138,12 @@ footer img {
   margin-left: 8.3333333333%;
 }
 
-footer .footer-links {
+footer .menu {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .menu-footer-links-container {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -11146,12 +11151,10 @@ footer .footer-links {
   flex: 0 0 25%;
   max-width: 25%;
   margin-left: 8.3333333333%;
-  padding-left: 0;
-  list-style-type: none;
   color: white;
 }
 
-footer .footer-links a {
+footer .menu-footer-links-container li a {
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
