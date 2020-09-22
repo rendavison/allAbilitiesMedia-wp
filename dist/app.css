@@ -11208,17 +11208,22 @@ footer {
   margin-right: -15px;
   margin-left: -15px;
   padding: 3rem 0;
-  background-color: #002c60;
+  background-color: #ccc;
 }
 
-footer img {
+footer .logos {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
-  margin-left: 8.3333333333%;
+  margin-left: 66.6666666667%;
+}
+
+footer .logos img {
+  width: 100%;
+  height: auto;
 }
 
 footer .menu {
@@ -11231,9 +11236,8 @@ footer .menu-footer-links-container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 25%;
-  max-width: 25%;
-  margin-left: 8.3333333333%;
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
   color: white;
 }
 
@@ -11241,6 +11245,6 @@ footer .menu-footer-links-container li a {
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: white;
+  color: #2c7d7d;
 }
 

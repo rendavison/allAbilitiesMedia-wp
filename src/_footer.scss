@@ -1,12 +1,17 @@
 footer {
   @include make-row();
   padding: 3rem 0;
-  background-color: $primary;
+  background-color: $light-grey;
 
-  img {
+  .logos {
     @include make-col-ready();
     @include make-col(2);
-    @include make-col-offset(1);
+    @include make-col-offset(8);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .menu {
@@ -16,15 +21,14 @@ footer {
 
   .menu-footer-links-container {
     @include make-col-ready();
-    @include make-col(3);
-    @include make-col-offset(1);
+    @include make-col(2);
     color: white;
 
     li a {
       font-size: 1.25rem;
       font-weight: 800;
       text-transform: uppercase;
-      color: white;
+      color: $secondary;
     }
   }
 }

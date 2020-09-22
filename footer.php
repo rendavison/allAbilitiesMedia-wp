@@ -1,9 +1,11 @@
   <?php wp_footer();?>
     <div class="container-fluid" aria-hidden="true">
       <footer>
-        <img src="https://via.placeholder.com/350x100" />
-        <img src="https://via.placeholder.com/350x100" />
-        
+        <section class="logos">
+          <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/UnPressLogoWhite.png" style="margin-bottom: 2rem;"/>
+          <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" /><br />
+        </section>
+
         <?php
         wp_nav_menu(
           array(
@@ -11,21 +13,6 @@
           )
         );
         ?>
-
-        <!---
-        <img src="https://via.placeholder.com/350x100" />
-        <img src="https://via.placeholder.com/350x100" />
-        <ul class="footer-links">
-          <li>
-            This is where we put disclosure information.
-          </li>
-          <li><a href="/">about us</a></li>
-          <li><a href="/">videos</a></li>
-          <li><a href="/">podcasts</a></li>
-          <li><a href="/">workshops</a></li>
-          <li><a href="/">get involved</a></li>
-        </ul>
-        --->
       </footer>
     </div>
   </body>
