@@ -12,6 +12,7 @@
   <body>
     <nav>
       <section class="primary">
+        <img src="src/assets/img/AAM-logo-19.png" />
         <?php
         wp_nav_menu(
           array(

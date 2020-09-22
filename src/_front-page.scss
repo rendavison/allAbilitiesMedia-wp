@@ -3,23 +3,34 @@
 .index-accent,
 .index-section {
   @include make-row();
-  padding: 3rem 0;
+  padding: 4rem 0;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
 
-  .button-group {
+  .menu-see-our-work-container {
     @include make-col-ready();
     @include make-col(12);
+    padding: 0;
+    margin: 0;
     margin-top: 1rem;
-    align-items: center;
 
-    button {
+    .menu {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      margin: 0 1rem;
       min-width: 12.5%;
       font-size: 1.5rem;
       font-weight: bold;
       text-transform: uppercase;
       border-radius: 0;
+
+      a {
+        color: white;
+      }
     }
   }
 
@@ -27,6 +38,7 @@
   .headline-right,
   .headline-alt {
     @include make-col-ready();
+    margin: 0;
     font-family: $font-family-header;
     font-size: 2rem;
   }
@@ -41,25 +53,46 @@
     @include make-col(6);
     @include make-col-offset(5);
     color: white;
+
+    a {
+      color: white;
+      font-size: 1.5rem;
+    }
   }
 
   .headline-alt {
     @include make-col(12);
     text-align: center;
     color: $secondary;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 600;
-  }
-
-  .read-more a {
-    color: white;
-    font-size: 1.5rem;
   }
 
   .partner-img {
     @include make-col-ready();
     @include make-col(8);
     @include make-col-offset(2);
+  }
+
+  .inset-info {
+    @include make-col-ready();
+    @include make-col(8);
+    @include make-col-offset(4);
+    background: $red;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    p {
+      margin-bottom: 0;
+      font-size: 1.25rem;
+      color: white;
+    }
+
+    a {
+      color: white;
+      font-family: $font-family-header;
+      font-size: 1.5rem;
+    }
   }
 }
 

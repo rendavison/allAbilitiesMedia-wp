@@ -11016,35 +11016,52 @@ nav .secondary .menu-secondary-navigation-container li a {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  padding: 3rem 0;
+  padding: 4rem 0;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
 }
 
-.index-primary .button-group,
-.index-secondary .button-group,
-.index-accent .button-group,
-.index-section .button-group {
+.index-primary .menu-see-our-work-container,
+.index-secondary .menu-see-our-work-container,
+.index-accent .menu-see-our-work-container,
+.index-section .menu-see-our-work-container {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   flex: 0 0 100%;
   max-width: 100%;
+  padding: 0;
+  margin: 0;
   margin-top: 1rem;
-  align-items: center;
 }
 
-.index-primary .button-group button,
-.index-secondary .button-group button,
-.index-accent .button-group button,
-.index-section .button-group button {
+.index-primary .menu-see-our-work-container .menu,
+.index-secondary .menu-see-our-work-container .menu,
+.index-accent .menu-see-our-work-container .menu,
+.index-section .menu-see-our-work-container .menu {
+  display: flex;
+  justify-content: center;
+}
+
+.index-primary .menu-see-our-work-container li,
+.index-secondary .menu-see-our-work-container li,
+.index-accent .menu-see-our-work-container li,
+.index-section .menu-see-our-work-container li {
+  margin: 0 1rem;
   min-width: 12.5%;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 0;
+}
+
+.index-primary .menu-see-our-work-container li a,
+.index-secondary .menu-see-our-work-container li a,
+.index-accent .menu-see-our-work-container li a,
+.index-section .menu-see-our-work-container li a {
+  color: white;
 }
 
 .index-primary .headline,
@@ -11063,6 +11080,7 @@ nav .secondary .menu-secondary-navigation-container li a {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin: 0;
   font-family: jubilat, serif;
   font-size: 2rem;
 }
@@ -11087,6 +11105,14 @@ nav .secondary .menu-secondary-navigation-container li a {
   color: white;
 }
 
+.index-primary .headline-right a,
+.index-secondary .headline-right a,
+.index-accent .headline-right a,
+.index-section .headline-right a {
+  color: white;
+  font-size: 1.5rem;
+}
+
 .index-primary .headline-alt,
 .index-secondary .headline-alt,
 .index-accent .headline-alt,
@@ -11095,16 +11121,8 @@ nav .secondary .menu-secondary-navigation-container li a {
   max-width: 100%;
   text-align: center;
   color: #2c7d7d;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
-}
-
-.index-primary .read-more a,
-.index-secondary .read-more a,
-.index-accent .read-more a,
-.index-section .read-more a {
-  color: white;
-  font-size: 1.5rem;
 }
 
 .index-primary .partner-img,
@@ -11118,6 +11136,40 @@ nav .secondary .menu-secondary-navigation-container li a {
   flex: 0 0 66.6666666667%;
   max-width: 66.6666666667%;
   margin-left: 16.6666666667%;
+}
+
+.index-primary .inset-info,
+.index-secondary .inset-info,
+.index-accent .inset-info,
+.index-section .inset-info {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+  margin-left: 33.3333333333%;
+  background: #ff6047;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.index-primary .inset-info p,
+.index-secondary .inset-info p,
+.index-accent .inset-info p,
+.index-section .inset-info p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.index-primary .inset-info a,
+.index-secondary .inset-info a,
+.index-accent .inset-info a,
+.index-section .inset-info a {
+  color: white;
+  font-family: jubilat, serif;
+  font-size: 1.5rem;
 }
 
 .index-primary {
