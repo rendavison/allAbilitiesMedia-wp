@@ -1,0 +1,37 @@
+#about-page {
+  padding-left: 0;
+  padding-right: 0;
+
+  h1 {
+    @include make-col-ready();
+    @include make-col(8);
+    @include make-col-offset(1);
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  .about-section {
+    @include make-row();
+    padding: 4rem 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    h2, p {
+      @include make-col-ready();
+      @include make-col(8);
+      @include make-col-offset(1);
+    }
+
+    .about-photos {
+      background-color: $red;
+      padding: 4rem 0;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
