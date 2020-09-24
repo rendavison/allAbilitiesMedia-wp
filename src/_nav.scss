@@ -18,6 +18,10 @@ nav {
       width: 100%;
       height: 3rem;
 
+      a:hover {
+        text-decoration: none;
+      }
+
       img {
         @include make-col(1);
         vertical-align: middle;

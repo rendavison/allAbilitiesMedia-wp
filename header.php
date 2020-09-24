@@ -13,8 +13,12 @@
     <nav>
       <section class="primary">
         <div id="logo">
-          <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/AAM-logo-19.png" />
-          <span class="title">All Abilities Media</span>
+          <a href="/" aria-label="Links home">
+            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/AAM-logo-19.png" alt="All-Abilities Media Logo"/>
+          </a>
+          <span class="title">
+            <a href="/" aria-label="All-Abilities Media; links home">All-Abilities Media</a>
+          </span>
         </div>
         <?php
         wp_nav_menu(

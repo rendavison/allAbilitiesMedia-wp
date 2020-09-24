@@ -1,8 +1,12 @@
 <?php
 /*
-Template Name: About Us
+Template Name: Media Gallery
 */
 ?>
+
+<head>
+  <title><?php the_title();?> - All-Abilities Media</title>
+</head>
 
 <?php get_header()?>
 
