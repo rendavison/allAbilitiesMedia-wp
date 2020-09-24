@@ -7,3 +7,11 @@ h1, h2 {
   font-weight: bold;
   color: $secondary;
 }
+
+h1 {
+  font-size: 5rem;
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
+}

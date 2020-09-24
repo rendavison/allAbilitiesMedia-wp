@@ -8,8 +8,16 @@
     @include make-col-offset(1);
     margin-top: 4rem;
     margin-bottom: 1rem;
-    font-size: 5rem;
-    font-weight: bold;
+
+    @media (max-width: 1023px) {
+      @include make-col(10);
+    }
+
+    @media (max-width: 767px) {
+      @include make-col(12);
+      @include make-col-offset(0);
+      text-align: center;
+    }
   }
 
   .about-section {
@@ -23,6 +31,15 @@
       @include make-col-ready();
       @include make-col(8);
       @include make-col-offset(1);
+
+      @media (max-width: 1023px) {
+        @include make-col(10);
+      }
+
+      @media (max-width: 767px) {
+        @include make-col(12);
+        @include make-col-offset(0);
+      }
     }
 
     .about-photos {
