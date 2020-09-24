@@ -51,7 +51,7 @@
 
   <section class="index-secondary">
     <div class="headline-alt" style="color: white;">Our Partners</div>
-    <center class="button-group">
+    <center>
       <button type="button" class="btn btn-outline-light btn-lg">get involved</button>
     </center>
   </section>

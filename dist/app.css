@@ -11038,6 +11038,22 @@ nav .secondary .menu-secondary-navigation-container li a {
   margin: 0;
   width: 100%;
   box-sizing: border-box;
+  align-content: center;
+}
+
+.index-primary button,
+.index-primary li,
+.index-secondary button,
+.index-secondary li,
+.index-accent button,
+.index-accent li,
+.index-section button,
+.index-section li {
+  min-width: 12.5%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0;
 }
 
 .index-primary .menu-see-our-work-container,
@@ -11068,11 +11084,6 @@ nav .secondary .menu-secondary-navigation-container li a {
 .index-accent .menu-see-our-work-container li,
 .index-section .menu-see-our-work-container li {
   margin: 0 1rem;
-  min-width: 12.5%;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 0;
 }
 
 .index-primary .menu-see-our-work-container li a,
