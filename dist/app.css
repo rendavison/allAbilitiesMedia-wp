@@ -11097,7 +11097,8 @@ nav .primary .menu-top-buttons-container li a {
   color: white;
 }
 
-nav .secondary {
+nav .secondary,
+nav .sticky-nav {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -11106,38 +11107,78 @@ nav .secondary {
   background-color: #002c60;
   box-sizing: border-box;
   justify-content: space-between;
+  z-index: 999999;
 }
 
-nav .secondary .menu-secondary-navigation-container {
+nav .secondary .menu-secondary-navigation-container,
+nav .secondary .menu-sticky-menu-container,
+nav .sticky-nav .menu-secondary-navigation-container,
+nav .sticky-nav .menu-sticky-menu-container {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-left: 50%;
   width: 100%;
   padding-top: 0.5rem;
 }
 
 @media (max-width: 1023px) {
-  nav .secondary .menu-secondary-navigation-container {
+  nav .secondary .menu-secondary-navigation-container,
+  nav .secondary .menu-sticky-menu-container,
+  nav .sticky-nav .menu-secondary-navigation-container,
+  nav .sticky-nav .menu-sticky-menu-container {
     flex: 0 0 75%;
     max-width: 75%;
     margin-left: 25%;
   }
 }
 
-nav .secondary .menu-secondary-navigation-container .menu {
+nav .secondary .menu-secondary-navigation-container .menu,
+nav .secondary .menu-sticky-menu-container .menu,
+nav .sticky-nav .menu-secondary-navigation-container .menu,
+nav .sticky-nav .menu-sticky-menu-container .menu {
   justify-content: space-between;
 }
 
-nav .secondary .menu-secondary-navigation-container li a {
+nav .secondary .menu-secondary-navigation-container li a,
+nav .secondary .menu-sticky-menu-container li a,
+nav .sticky-nav .menu-secondary-navigation-container li a,
+nav .sticky-nav .menu-sticky-menu-container li a {
   margin-right: 2rem;
   font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+}
+
+.menu-secondary-navigation-container {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 50%;
+}
+
+.menu-sticky-menu-container {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 0;
+}
+
+/*extra classes for sticky header on scroll*/
+
+.sticky-nav {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-up {
+  top: -3rem;
+  transition: 0.3s ease-in-out;
 }
 
 .index-primary,

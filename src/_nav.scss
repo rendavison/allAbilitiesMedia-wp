@@ -66,17 +66,18 @@ nav {
   }
 
   /*Other links*/
-  .secondary {
+  .secondary,
+  .sticky-nav {
     @include make-row();
     height: 3rem;
     background-color:  $primary;
     box-sizing: border-box;
     justify-content: space-between;
+    z-index: 999999;
 
-    .menu-secondary-navigation-container {
+    .menu-secondary-navigation-container,
+    .menu-sticky-menu-container {
       @include make-col-ready();
-      @include make-col(6);
-      @include make-col-offset(6);
       width: 100%;
       padding-top: 0.5rem;
 
@@ -98,4 +99,31 @@ nav {
       }
     }
   }
+}
+
+.menu-secondary-navigation-container {
+  @include make-col(6);
+  @include make-col-offset(6);
+}
+
+.menu-sticky-menu-container {
+  @include make-col(12);
+  @include make-col-offset(0);
+}
+
+/*extra classes for sticky header on scroll*/
+.sticky-nav {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-up {
+  top: -3rem;
+  transition: 0.3s ease-in-out;
 }

@@ -22,6 +22,7 @@ register_nav_menus(
   array(
     'top-buttons' => 'Top Buttons Location',
     'secondary-nav' => 'Secondary Nav Location',
+    'sticky-nav' => 'Sticky Nav Location',
     'see-our-work' => 'See Our Work Location',
     'footer-links' => 'Footer Links Location',
     'mobile-nav' => 'Mobile Nav Location'
