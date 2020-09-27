@@ -4,7 +4,7 @@
 
   <!--Stand in for intro video-->
   <section>
-    <div style="width: 100%; background: black; height: 800px">
+    <div style="width: 100%; background: black; height: 600px">
     </div>
   </section>
 
@@ -12,6 +12,11 @@
     <div class="headline">
       <?php the_field('intro_text'); ?>
     </div>
+    <?php
+      $image = get_field('intro_photo');
+      if( !empty( $image ) ): ?>
+        <img class="right" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+    <?php endif; ?>
   </section>
 
   <section class="index-section">
@@ -26,6 +31,11 @@
   </section>
 
   <section class="index-primary">
+    <?php
+      $image = get_field('quote_photo');
+      if( !empty( $image ) ): ?>
+        <img class="offset" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+    <?php endif; ?>
     <div class="headline-right">
       <?php the_field('quote'); ?><br />
       <?php
@@ -37,6 +47,11 @@
   </section>
 
   <section class="index-section">
+    <?php
+      $image = get_field('about_photo');
+      if( !empty( $image ) ): ?>
+        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+    <?php endif; ?>
     <section class="inset-info">
       <p>
         <?php the_field('about'); ?><br />

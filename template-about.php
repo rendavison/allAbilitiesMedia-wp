@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Media Gallery
+Template Name: about page
 */
 ?>
 

@@ -11064,10 +11064,10 @@ nav .primary #logo .title {
   vertical-align: middle;
   padding-left: 0.5rem;
   color: #002c60;
-  font-size: 2.5rem;
-  font-family: zenon, sans-serif;
-  font-weight: 700;
-  font-style: italic;
+  font-size: 2.25rem;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 nav .primary .menu-top-buttons-container {
@@ -11148,11 +11148,12 @@ nav .secondary .menu-secondary-navigation-container li a {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  padding: 4rem 0;
+  padding: 6rem 0;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
   align-content: center;
+  /*default styling for all home page section images*/
 }
 
 .index-primary button,
@@ -11168,6 +11169,32 @@ nav .secondary .menu-secondary-navigation-container li a {
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 0;
+}
+
+.index-primary img,
+.index-secondary img,
+.index-accent img,
+.index-section img {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.index-primary img.offset,
+.index-secondary img.offset,
+.index-accent img.offset,
+.index-section img.offset {
+  margin-left: 8.3333333333%;
+}
+
+.index-primary img.right,
+.index-secondary img.right,
+.index-accent img.right,
+.index-section img.right {
+  margin-left: 58.3333333333%;
 }
 
 .index-primary .menu-see-our-work-container,
@@ -11223,6 +11250,7 @@ nav .secondary .menu-secondary-navigation-container li a {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  position: absolute;
   margin: 0;
   font-family: jubilat, serif;
   font-size: 2rem;
@@ -11291,9 +11319,11 @@ nav .secondary .menu-secondary-navigation-container li a {
   padding-left: 15px;
   flex: 0 0 66.6666666667%;
   max-width: 66.6666666667%;
-  margin-left: 33.3333333333%;
-  background: #ff6047;
+  /*@include make-col-offset(4);
+  position: absolute;
+  margin-top: 10rem;*/
   padding: 2rem;
+  background: #ff6047;
   box-sizing: border-box;
 }
 
