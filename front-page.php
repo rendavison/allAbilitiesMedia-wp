@@ -8,49 +8,65 @@
     </div>
   </section>
 
-  <section class="index-accent">
-    <div class="headline">
-      <?php the_field('intro_text'); ?>
+  <!-- Intro Text -->
+  <section class="index-section">
+    <div class="headline-alt">
+      <span class="highlight">
+        <?php the_field('intro_text'); ?>
+      </span>
     </div>
+  </section>
+
+  <!-- See Our Work -->
+  <section class="index-section">
+
+    <section class="index-secondary half-section">
+      <div class="headline">See Our Work</div>
+        <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'see-our-work'
+          )
+        );
+        ?>
+    </section>
+
     <?php
       $image = get_field('intro_photo');
       if( !empty( $image ) ): ?>
-        <img class="right" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <img class="left" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
     <?php endif; ?>
   </section>
 
+  <!-- Quote from a student -->
   <section class="index-section">
-    <div class="headline-alt">See Our Work</div>
-      <?php
-      wp_nav_menu(
-        array(
-          'theme_location' => 'see-our-work'
-        )
-      );
-      ?>
-  </section>
-
-  <section class="index-primary">
-    <?php
+    <!--<?php
       $image = get_field('quote_photo');
       if( !empty( $image ) ): ?>
         <img class="offset" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-    <?php endif; ?>
-    <div class="headline-right">
-      <?php the_field('quote'); ?><br />
-      <?php
-        $link = get_field('quote_link');
-        if( $link ): ?>
-          <a class="read-more" href="<?php echo esc_url( $link ); ?>">Read more →</a>
-      <?php endif; ?>
-    </div>
+    <?php endif; ?>-->
+
+    <h2 class="headline-primary">
+        <?php the_field('quote'); ?>
+      <br />
+        <center>
+          <?php
+            $link = get_field('quote_link');
+            if( $link ): ?>
+              <h4 style="padding-top: 0.5rem;">
+                <a href="<?php echo esc_url( $link ); ?>">Read more →</a>
+              </h4>
+          <?php endif; ?>
+        </center>
+    </h2>
   </section>
 
+  <!-- About -->
   <section class="index-section">
     <?php
       $image = get_field('about_photo');
       if( !empty( $image ) ): ?>
-        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <img class="left" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
     <?php endif; ?>
     <section class="inset-info">
       <p>
@@ -64,11 +80,22 @@
     </section>
   </section>
 
+  <!-- Partners -->
   <section class="index-secondary">
-    <div class="headline-alt" style="color: white;">Our Partners</div>
-    <center>
-      <button type="button" class="btn btn-outline-light btn-lg">get involved</button>
-    </center>
+    <div class="headline" style="color: white;">Our Partners</div>
+    <section id="partners">
+      <center>
+        <?php $partners = get_field('partners_logos'); ?>
+          <?php foreach ($partners as $logo) {
+            if (!empty($logo)): ?>
+              <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
+            <?php endif; } ?>
+
+            <section class="index-section" style="justify-content: center;">
+              <button type="button" class="btn btn-outline-light btn-lg">get involved</button>
+            </section>
+      </center>
+    </section>
   </section>
 
 </main>

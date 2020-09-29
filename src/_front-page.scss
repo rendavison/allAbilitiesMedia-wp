@@ -1,9 +1,15 @@
+/*Section Colors*/
+.index-primary { background-color: $primary; }
+.index-secondary { background-color: $secondary; }
+.index-accent { background-color: $red; }
+
+/*Types of Sections*/
 .index-primary,
 .index-secondary,
 .index-accent,
 .index-section {
   @include make-row();
-  padding: 6rem 0;
+  padding: 3rem 0;
   margin: 0;
   width: 100%;
   box-sizing: border-box;
@@ -21,10 +27,14 @@
   /*default styling for all home page section images*/
   img {
     @include make-col-ready();
-    @include make-col(4);
+    @include make-col(6);
+
+    &.left {
+      padding: 0;
+    }
 
     &.offset {
-      @include make-col-offset(1);
+      padding-left: 3rem;
     }
 
     &.right {
@@ -32,6 +42,55 @@
     }
   }
 
+  .headline,
+  .headline-right,
+  .headline-alt {
+    @include make-col-ready();
+    margin: 0;
+    font-family: $font-family-header;
+    font-size: 2.5rem;
+  }
+
+  .headline,
+  .headline-primary {
+    @include make-col(12);
+    padding-right: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .headline-primary {
+    color: $primary;
+  }
+
+  .headline-alt {
+    @include make-col(9);
+    margin-left: 3rem;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: normal;
+
+    .highlight p {
+      display: inline;
+      background-color: $red;
+      white-space: pre-wrap;
+    }
+  }
+
+  /*.headline-right {
+    @include make-col(9);
+    @include make-col-offset(3);
+    text-align: center;
+    color: white;
+
+    .highlight {
+      display: inline;
+      background-color: $primary;
+    }
+  }*/
+
+  /*See our Work buttons*/
   .menu-see-our-work-container {
     @include make-col-ready();
     @include make-col(12);
@@ -46,60 +105,29 @@
 
     li {
       margin: 0 1rem;
+      min-width: 25%;
+      border-width: 3px;
+
+      &:hover {
+        color: $secondary;
+      }
 
       a {
         color: white;
+
+        &:hover {
+          color: $secondary;
+          text-decoration: none;
+        }
       }
     }
-  }
-
-  .headline,
-  .headline-right,
-  .headline-alt {
-    @include make-col-ready();
-    position: absolute;
-    margin: 0;
-    font-family: $font-family-header;
-    font-size: 2rem;
-  }
-
-  .headline {
-    @include make-col(6);
-    @include make-col-offset(1);
-    color: white;
-  }
-
-  .headline-right {
-    @include make-col(6);
-    @include make-col-offset(5);
-    color: white;
-
-    a {
-      color: white;
-      font-size: 1.5rem;
-    }
-  }
-
-  .headline-alt {
-    @include make-col(12);
-    text-align: center;
-    color: $secondary;
-    font-size: 3rem;
-    font-weight: 600;
-  }
-
-  .partner-img {
-    @include make-col-ready();
-    @include make-col(8);
-    @include make-col-offset(2);
   }
 
   .inset-info {
     @include make-col-ready();
     @include make-col(8);
-    /*@include make-col-offset(4);
+    @include make-col-offset(4);
     position: absolute;
-    margin-top: 10rem;*/
     padding: 2rem;
     background: $red;
     box-sizing: border-box;
@@ -118,6 +146,23 @@
   }
 }
 
-.index-primary { background-color: $primary; }
-.index-secondary { background-color: $secondary; }
-.index-accent { background-color: $red; }
+.half-section {
+  @include make-col-ready();
+  @include make-col(6);
+}
+
+/*Our Partners*/
+#partners {
+  margin-left: 3rem;
+  padding-top: 1rem;
+  align-items: center;
+
+  img {
+    @include make-col-ready();
+    @include make-col(2);
+  }
+
+  button {
+    border-width: 3px;
+  }
+}
