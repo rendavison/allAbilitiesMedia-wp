@@ -4,8 +4,8 @@
 
 <?php get_header()?>
 
-<main class="container-fluid">
-    <h1><?php the_category();?></h1>
+<main class="container-fluid" id="text-page">
+    <!---<h1><?php the_category();?></h1>--->
 
     <?php get_template_part('includes/section', 'content');?>
 </main>

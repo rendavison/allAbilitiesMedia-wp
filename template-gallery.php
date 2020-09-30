@@ -10,7 +10,7 @@ Template Name: Media Gallery
 
 <?php get_header()?>
 
-<main class="container">
+<main class="container" id="template-gallery">
   <section class="header">
     <?php
       $image = get_field('header');
