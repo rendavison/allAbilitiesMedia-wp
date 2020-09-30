@@ -1,0 +1,44 @@
+#about-sidebar,
+#get-involved-sidebar {
+  @include make-col-ready();
+  @include make-col(3);
+  @include make-col-offset(1);
+  margin-top: 4rem;
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    max-width: 100%;
+  }
+
+  .link-out {
+    width: auto;
+    max-width: 100%;
+    padding: 1rem;
+    background-color: $secondary;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  li {
+    list-style-type: none;
+    margin: 2rem 0;
+  }
+}
+
+/*Exceptions*/
+
+#get-involved-sidebar {
+  @include make-col-offset(0.5);
+  padding-left: 0;
+
+  h3 {
+    padding-left: 15px;
+  }
+
+  li {
+    margin-top: 0;
+  }
+}

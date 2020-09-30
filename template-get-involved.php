@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About Us
+Template Name: Get Involved
 */
 ?>
 
@@ -25,9 +25,9 @@ Template Name: About Us
       <?php get_template_part('includes/section', 'content');?>
     </section>
 
-    <div id="about-sidebar">
-      <?php if(is_active_sidebar('about-sidebar')):?>
-        <?php dynamic_sidebar('about-sidebar');?>
+    <div id="get-involved-sidebar">
+      <?php if(is_active_sidebar('get-involved-sidebar')):?>
+        <?php dynamic_sidebar('get-involved-sidebar');?>
       <?php endif;?>
     </div>
   </section>

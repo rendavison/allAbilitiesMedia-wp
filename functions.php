@@ -29,6 +29,25 @@ register_nav_menus(
   )
 );
 
+//Sidebars
+function my_sidebars()
+{
+  register_sidebar(
+    array(
+      'name' => 'About Sidebar',
+      'id' => 'about-sidebar'
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => 'Get Involved Sidebar',
+      'id' => 'get-involved-sidebar'
+    )
+  );
+}
+add_action('widgets_init', 'my_sidebars');
+
 //Feed Validator Cron Workaround
 add_filter('cron_request', 'my_increase_cron_request_timeout');
     function my_increase_cron_request_timeout($args) {

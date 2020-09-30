@@ -4,7 +4,7 @@
 
 <?php get_header()?>
 
-<main class="container-fluid" id="text-page">
+<main class="container-fluid" id="text-page" style="padding: 0; margin: 0">
   <section class="header">
     <?php
       $image = get_field('header');
