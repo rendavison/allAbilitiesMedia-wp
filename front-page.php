@@ -92,7 +92,9 @@
             <?php endif; } ?>
 
             <section class="index-section" style="justify-content: center;">
-              <button type="button" class="btn btn-outline-light btn-lg">get involved</button>
+              <button type="button" class="btn btn-outline-light btn-lg">
+                <a href="/get-involved">get involved</a>
+              </button>
             </section>
       </center>
     </section>

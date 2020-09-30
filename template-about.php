@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: about page
+Template Name: About Us
 */
 ?>
 
@@ -10,7 +10,7 @@ Template Name: about page
 
 <?php get_header()?>
 
-<main class="container-fluid" id="about-page">
+<main class="container-fluid" id="text-page">
     <h1><?php the_title();?></h1>
 
     <section class="about-section">

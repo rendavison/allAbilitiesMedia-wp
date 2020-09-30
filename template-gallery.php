@@ -10,8 +10,8 @@ Template Name: Media Gallery
 
 <?php get_header()?>
 
-<main class="container-fluid">
-    <h1><?php the_title();?></h1>
+<main class="container">
+    <h1 style="padding: 3rem 0;"><?php the_title();?></h1>
 
     <?php get_template_part('includes/section', 'content');?>
 </main>

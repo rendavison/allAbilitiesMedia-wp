@@ -10924,106 +10924,25 @@ h2 {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h4 {
   font-size: 2rem;
-}
-
-#text-page {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#text-page h1 {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%;
-  margin-left: 8.3333333333%;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 1023px) {
-  #text-page h1 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-}
-
-@media (max-width: 767px) {
-  #text-page h1 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
-#text-page .about-section {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding: 4rem 0;
-  margin: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-#text-page .about-section h2,
-#text-page .about-section p {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 66.6666666667%;
-  max-width: 66.6666666667%;
-  margin-left: 8.3333333333%;
-}
-
-@media (max-width: 1023px) {
-  #text-page .about-section h2,
-  #text-page .about-section p {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-}
-
-@media (max-width: 767px) {
-  #text-page .about-section h2,
-  #text-page .about-section p {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-left: 0;
-  }
-}
-
-#text-page .about-section .about-photos {
-  background-color: #ba002a;
-  padding: 4rem 0;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 nav {
@@ -11078,9 +10997,9 @@ nav .primary #logo .title {
   vertical-align: middle;
   padding-left: 0.5rem;
   color: #002c60;
-  font-size: 2.25rem;
-  font-family: acumin-pro, sans-serif;
-  font-weight: 900;
+  font-size: 3rem;
+  font-family: acumin-pro-condensed, sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -11096,7 +11015,7 @@ nav .primary .menu-top-buttons-container {
 
 nav .primary .menu-top-buttons-container .menu {
   justify-content: space-around;
-  margin-top: -3rem;
+  margin-top: -4rem;
 }
 
 nav .primary .menu-top-buttons-container li {
@@ -11384,10 +11303,10 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   border-width: 3px;
 }
 
-.index-primary .menu-see-our-work-container li:hover,
-.index-secondary .menu-see-our-work-container li:hover,
-.index-accent .menu-see-our-work-container li:hover,
-.index-section .menu-see-our-work-container li:hover {
+.index-primary .menu-see-our-work-container li:hover a,
+.index-secondary .menu-see-our-work-container li:hover a,
+.index-accent .menu-see-our-work-container li:hover a,
+.index-section .menu-see-our-work-container li:hover a {
   color: #2c7d7d;
 }
 
@@ -11469,6 +11388,16 @@ nav .sticky-nav .menu-sticky-menu-container li a {
 
 #partners button {
   border-width: 3px;
+}
+
+/*Button Links*/
+
+button a {
+  color: white;
+}
+
+button:hover a {
+  color: #2c7d7d;
 }
 
 footer {
@@ -11553,5 +11482,133 @@ footer .menu-footer-links-container li a {
   font-weight: 800;
   text-transform: uppercase;
   color: white;
+}
+
+#text-page,
+#podcast-overview {
+  padding-left: 0;
+  padding-right: 0;
+  /*Text Default Styles*/
+  /*About Page*/
+  /*Podcast Overview*/
+}
+
+#text-page h1,
+#text-page h2,
+#text-page p,
+#podcast-overview h1,
+#podcast-overview h2,
+#podcast-overview p {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+  margin-left: 8.3333333333%;
+}
+
+@media (max-width: 1023px) {
+  #text-page h1,
+  #text-page h2,
+  #text-page p,
+  #podcast-overview h1,
+  #podcast-overview h2,
+  #podcast-overview p {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+}
+
+@media (max-width: 767px) {
+  #text-page h1,
+  #text-page h2,
+  #text-page p,
+  #podcast-overview h1,
+  #podcast-overview h2,
+  #podcast-overview p {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+#text-page h1,
+#podcast-overview h1 {
+  display: inline-block;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  width: auto;
+  background-color: #2c7d7d;
+  color: white;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 767px) {
+  #text-page h1,
+  #podcast-overview h1 {
+    text-align: center;
+  }
+}
+
+#text-page .about-section,
+#podcast-overview .about-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 4rem 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#text-page .about-section .about-photos,
+#podcast-overview .about-section .about-photos {
+  background-color: #ba002a;
+  padding: 4rem 0;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#text-page .desc,
+#podcast-overview .desc {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding: 2rem 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#text-page .show-row,
+#podcast-overview .show-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin: 0;
+  margin-bottom: 1rem;
+  width: 100%;
+  align-content: center;
+}
+
+#text-page .show-row .show,
+#podcast-overview .show-row .show {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 3rem;
+  background-color: #002c60;
+  color: white;
+  box-sizing: border-box;
 }
 

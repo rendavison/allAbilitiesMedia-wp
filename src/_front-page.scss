@@ -108,7 +108,7 @@
       min-width: 25%;
       border-width: 3px;
 
-      &:hover {
+      &:hover a {
         color: $secondary;
       }
 
@@ -164,5 +164,16 @@
 
   button {
     border-width: 3px;
+  }
+}
+
+/*Button Links*/
+button {
+  a {
+    color: white;
+  }
+
+  &:hover a {
+    color: $secondary;
   }
 }
