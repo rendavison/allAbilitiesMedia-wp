@@ -9975,6 +9975,14 @@ h3 {
     border-color: #dee2e6;
   }
 }
+#video-feed .card {
+  padding: 0;
+  background: transparent;
+}
+#video-feed iframe {
+  width: 100%;
+}
+
 .card {
   position: relative;
   width: 100%;

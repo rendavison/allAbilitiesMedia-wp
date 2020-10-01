@@ -13,7 +13,7 @@
     <nav>
       <section class="primary">
         <div id="logo">
-          <a href="/" aria-label="Links home">
+          <a href="/allAbilities" aria-label="Links home">
             <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/AAM_logo-20-1.png"/>
           </a>
           <!--<span class="title">
