@@ -39,6 +39,11 @@ Template Name: Podcast Overview
       <img class="album-art" src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/04417a0246ccbf88.png" />
       <section class="show-info">
         <h3>A Valid Podcast</h3>
+        <p>
+          People with disabilities share humor, analysis, news, and information about their lives and the disability community at large. We welcome guests to live recordings at 7 pm (EDT) Tuesdays & Thursdays. To join the conversation, go to unabridgedpress.com. Produced by Unabridged Press in partnership with Point Park University Center for Media Innovation.<br />
+          <b>Latest Episode:</b><br />
+          <iframe src="https://anchor.fm/a-valid-podcast/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+        </p>
       </section>
     </section>
   </section>

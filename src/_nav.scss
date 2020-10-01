@@ -10,7 +10,7 @@ nav {
   .primary {
     @include make-row();
     height: 6rem;
-    padding-top: 1rem;
+    padding-top: 0.75rem;
     box-sizing: border-box;
 
     #logo {
@@ -23,13 +23,13 @@ nav {
       }
 
       img {
-        @include make-col(1);
+        @include make-col(4);
         vertical-align: middle;
         width: auto;
-        height: 3.5rem;
+        height: 4.5rem;
       }
 
-      .title {
+      /*.title {
         @include make-col(3);
         vertical-align: middle;
         padding-left: 0.5rem;
@@ -38,7 +38,7 @@ nav {
         font-family: $font-family-logo;
         font-weight: 800;
         text-transform: uppercase;
-      }
+      }*/
     }
 
     .menu-top-buttons-container {

@@ -14,11 +14,11 @@
       <section class="primary">
         <div id="logo">
           <a href="/" aria-label="Links home">
-            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/AAM-logo-19.png" alt="All-Abilities Media Logo"/>
+            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/AAM_logo-20-1.png"/>
           </a>
-          <span class="title">
+          <!--<span class="title">
             <a href="/" aria-label="All-Abilities Media; links home">All-Abilities Media</a>
-          </span>
+          </span>-->
         </div>
         <?php
         wp_nav_menu(
