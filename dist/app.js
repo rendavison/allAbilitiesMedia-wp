@@ -1,1 +1,174 @@
-!function(n){var e={};function t(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return n[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}t.m=n,t.c=e,t.d=function(n,e,r){t.o(n,e)||Object.defineProperty(n,e,{enumerable:!0,get:r})},t.r=function(n){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(n,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(n,"__esModule",{value:!0})},t.t=function(n,e){if(1&e&&(n=t(n)),8&e)return n;if(4&e&&"object"==typeof n&&n&&n.__esModule)return n;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:n}),2&e&&"string"!=typeof n)for(var o in n)t.d(r,o,function(e){return n[e]}.bind(null,o));return r},t.n=function(n){var e=n&&n.__esModule?function(){return n.default}:function(){return n};return t.d(e,"a",e),e},t.o=function(n,e){return Object.prototype.hasOwnProperty.call(n,e)},t.p="/",t(t.s=0)}([function(n,e,t){t(1),n.exports=t(3)},function(n,e,t){t(2)},function(n,e){jQuery(document).ready((function(n){var e=0,t=n("nav").outerHeight();n(".sticky-nav").css("display","none"),n(window).scroll((function(n){didScroll=!0})),setInterval((function(){didScroll&&(!function(){var r=n(this).scrollTop();if(Math.abs(e-r)<=5)return;r>e&&r>t?n(".sticky-nav").addClass("nav-up"):(r+n(window).height()<n(document).height()&&n(".sticky-nav").addClass("sticky").removeClass("nav-up").css("display","block"),n(window).scrollTop()<t&&n(".sticky-nav").removeClass("sticky").css("display","none"));e=r}(),didScroll=!1)}),250)}))},function(n,e){}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/app.js":
+/*!********************!*\
+  !*** ./src/app.js ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./sticky_header */ "./src/sticky_header.js");
+
+/***/ }),
+
+/***/ "./src/app.scss":
+/*!**********************!*\
+  !*** ./src/app.scss ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./src/sticky_header.js":
+/*!******************************!*\
+  !*** ./src/sticky_header.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//Modified version of
+//https://codepen.io/bravotanmoy/pen/zBNPYV
+jQuery(document).ready(function ($) {
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('nav').outerHeight();
+  $('.sticky-nav').css("display", "none");
+  $(window).scroll(function (event) {
+    didScroll = true;
+  });
+  setInterval(function () {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled() {
+    var st = $(this).scrollTop(); // Make sure they scroll more than delta
+
+    if (Math.abs(lastScrollTop - st) <= delta) return; // If they scrolled down and are past the navbar, add class .nav-up.
+
+    if (st > lastScrollTop && st > navbarHeight) {
+      // Scroll Down
+      $('.sticky-nav').addClass('nav-up');
+    } else {
+      // Scroll Up
+      if (st + $(window).height() < $(document).height()) {
+        $('.sticky-nav').addClass('sticky').removeClass('nav-up').css("display", "block");
+      } // Disappear once we get back to the top
+
+
+      if ($(window).scrollTop() < navbarHeight) {
+        $('.sticky-nav').removeClass('sticky').css("display", "none");
+      }
+    }
+
+    lastScrollTop = st;
+  }
+});
+
+/***/ }),
+
+/***/ 0:
+/*!*****************************************!*\
+  !*** multi ./src/app.js ./src/app.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! /Users/remydavison/.bitnami/stackman/machines/xampp/volumes/root/htdocs/allAbilities/wp-content/themes/allAbilitiesMedia-wp/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /Users/remydavison/.bitnami/stackman/machines/xampp/volumes/root/htdocs/allAbilities/wp-content/themes/allAbilitiesMedia-wp/src/app.scss */"./src/app.scss");
+
+
+/***/ })
+
+/******/ });
