@@ -57,7 +57,7 @@
     padding-right: 0;
     text-align: center;
     color: white;
-    font-weight: bold;
+    font-weight: 800;
   }
 
   .headline-primary {
@@ -68,15 +68,15 @@
     @include make-col(9);
     margin-left: 3rem;
     color: white;
-    font-size: 3.5rem;
-    font-weight: normal;
+    font-size: 3.25rem;
+    font-weight: 800;
+  }
 
-    .highlight p {
+    /*.highlight p {
       display: inline;
       background-color: $red;
       white-space: pre-wrap;
-    }
-  }
+    }/*
 
   /*.headline-right {
     @include make-col(9);

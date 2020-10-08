@@ -39,7 +39,10 @@ Template Name: Podcast Overview
         <br /><br />
         <center>
           <button type="button" class="btn btn-outline-light btn-lg">
-            <a href="/">Listen to more</a>
+            <a href="/allAbilities/category/a-valid-podcast/">Listen to more</a>
+          </button>
+          <button type="button" class="btn btn-outline-light btn-lg">
+            <a href="/allAbilities/tag/avp-asl/">ASL versions</a>
           </button>
         </center>
       </section>

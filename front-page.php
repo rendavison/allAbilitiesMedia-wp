@@ -9,7 +9,7 @@
   </section>
 
   <!-- Intro Text -->
-  <section class="index-section">
+  <section class="index-accent">
     <div class="headline-alt">
       <span class="highlight">
         <?php the_field('intro_text'); ?>
@@ -18,7 +18,7 @@
   </section>
 
   <!-- See Our Work -->
-  <section class="index-section">
+  <section class="index-section" style="padding:0">
 
     <section class="index-secondary half-section">
       <div class="headline">See Our Work</div>
