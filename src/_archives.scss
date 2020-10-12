@@ -9,6 +9,10 @@
     margin: 0;
     box-sizing: border-box;
 
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+
     p {
       width: 100%;
       color: $primary;
@@ -23,6 +27,10 @@
     border: 0;
     border-radius: 0;
     background: #eee;
+
+    @media (max-width: 768px) {
+      @include make-col(11);
+    }
 
     h3 {
       margin-bottom: 1rem;
@@ -53,12 +61,28 @@
 
         .show-info {
           height: 18rem;
+
+          @media (max-width: 768px) {
+            height: auto;
+          }
         }
       }
 
       img {
         float: left;
         margin-right: 1rem;
+        margin-bottom: 0.5rem;
+
+        @media (max-width: 768px) {
+          float: none;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    button {
+      @media (max-width: 768px) {
         margin-bottom: 0.5rem;
       }
     }

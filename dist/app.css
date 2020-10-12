@@ -9991,6 +9991,11 @@ h3 {
   margin: 0;
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .archive h3.desc {
+    font-size: 1.5rem;
+  }
+}
 .archive h3.desc p {
   width: 100%;
   color: #002c60;
@@ -10007,6 +10012,12 @@ h3 {
   border: 0;
   border-radius: 0;
   background: #eee;
+}
+@media (max-width: 768px) {
+  .archive .card {
+    flex: 0 0 91.6666666667%;
+    max-width: 91.6666666667%;
+  }
 }
 .archive .card h3 {
   margin-bottom: 1rem;
@@ -10030,10 +10041,27 @@ h3 {
 #podcast-feed .shows .card .card-body .show-info {
   height: 18rem;
 }
+@media (max-width: 768px) {
+  #podcast-feed .shows .card .card-body .show-info {
+    height: auto;
+  }
+}
 #podcast-feed .shows .card img {
   float: left;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  #podcast-feed .shows .card img {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #podcast-feed .shows button {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /*Video Page*/
@@ -10818,6 +10846,17 @@ footer .menu-footer-links-container li a {
     height: auto;
     overflow: hidden;
   }*/
+}
+@media (max-width: 768px) {
+  #text-page .show,
+#text-page .show-alt,
+#podcast-overview .show,
+#podcast-overview .show-alt,
+#template-gallery .show,
+#template-gallery .show-alt {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
 }
 #text-page .show .show-info,
 #text-page .show-alt .show-info,

@@ -69,6 +69,10 @@
     margin: 0;
     background-color: $secondary;
 
+    @media (max-width: 768px) {
+      @include make-col(10);
+    }
+
     /*img {
       @include make-col-ready();
       @include make-col(4);
