@@ -5,6 +5,10 @@
   @include make-col-offset(1);
   margin-top: 4rem;
 
+  @media (max-width: 768px) {
+    @include make-col(10);
+  }
+
   img {
     width: 100%;
   }

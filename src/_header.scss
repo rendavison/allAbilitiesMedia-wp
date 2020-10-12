@@ -5,6 +5,10 @@
   margin: 0;
   background: transparent;
 
+  @media (max-width: 768px) {
+    object-fit: cover;
+  }
+
   img {
     position: absolute;
     width: 100%;

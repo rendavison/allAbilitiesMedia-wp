@@ -13,10 +13,9 @@
       @include make-col(10);
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       @include make-col(12);
       @include make-col-offset(0);
-      text-align: center;
     }
   }
 
@@ -28,6 +27,10 @@
     padding: 4rem 0;
     width: 100%;
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      @include make-col(10);
+    }
 
     .about-photos {
       background-color: $red;
