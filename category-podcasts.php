@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Podcast Overview
-*/
-?>
-
 <head>
   <title><?php $cat = get_the_category(); echo $cat[0]->cat_name; ?> - All-Abilities Media</title>
 </head>
