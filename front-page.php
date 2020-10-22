@@ -4,12 +4,14 @@
 
   <!--Stand in for intro video-->
   <section>
-    <div style="width: 100%; background: black; height: 600px">
+    <!--<div style="width: 100%; background: black; height: 600px">-->
+    <div style="padding:55.83% 0 0 0;position:relative;"><iframe src="https://drive.google.com/file/d/1qG8bM2UEwNWkpgGgqfiCm2_ptx6B07Wo/preview" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div>
+    <!--<iframe src="https://drive.google.com/file/d/1qG8bM2UEwNWkpgGgqfiCm2_ptx6B07Wo/preview" width="100%" height="100%"></iframe>-->
     </div>
   </section>
 
   <!-- Intro Text -->
-  <section class="index-accent">
+  <section class="index-section">
     <div class="headline-alt">
       <span class="highlight">
         <?php the_field('intro_text'); ?>
@@ -34,7 +36,7 @@
     <?php
       $image = get_field('intro_photo');
       if( !empty( $image ) ): ?>
-        <img class="left" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <img class="left half" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
     <?php endif; ?>
   </section>
 
@@ -54,7 +56,7 @@
             $link = get_field('quote_link');
             if( $link ): ?>
               <h4 style="padding-top: 0.5rem;">
-                <a href="<?php echo esc_url( $link ); ?>">Read more →</a>
+                <a href="<?php echo esc_url( $link ); ?>" aria-label="Read more">Read more →</a>
               </h4>
           <?php endif; ?>
         </center>
@@ -66,7 +68,7 @@
     <?php
       $image = get_field('about_photo');
       if( !empty( $image ) ): ?>
-        <img class="left" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+        <img class="left two-thirds" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
     <?php endif; ?>
     <section class="inset-info">
       <p>
@@ -74,28 +76,48 @@
         <?php
           $link = get_field('about_link');
           if( $link ): ?>
-            <a href="<?php echo esc_url( $link ); ?>">More about us →</a>
+            <a href="<?php echo esc_url( $link ); ?>" aria-label="More about us">More about us →</a>
         <?php endif; ?>
       </p>
     </section>
   </section>
 
   <!-- Partners -->
-  <section class="index-secondary">
-    <div class="headline" style="color: white;">Our Partners</div>
+  <section class="index-primary">
+    <div class="headline">News Partners</div>
     <section id="partners">
       <center>
         <?php $partners = get_field('partners_logos'); ?>
-          <?php foreach ($partners as $logo) {
+        <?php $sites = get_field('partners_links'); ?>
+          <?php foreach(array_combine($partners, $sites) as $logo => $site) {
+              if (!empty($logo)): ?>
+                <?php if ( $site ): ?>
+                  <a href="<?php echo esc_url( $site ); ?>">
+                    <img src="<?php echo esc_url($logo); ?>" alt="<?php echo esc_attr($logo); ?>" />
+                  </a>
+                <?php endif; ?>
+              <?php endif;
+           } ?>
+
+            <section class="index-section" style="justify-content: center;">
+              <button type="button" class="primary btn btn-outline-light btn-lg">
+                <a href="/get-involved" aria-label="get involved">get involved</a>
+              </button>
+            </section>
+      </center>
+    </section>
+  </section>
+
+  <!-- Funders -->
+  <section class="index-section">
+    <div class="headline-primary">Funding Partners</div>
+    <section id="partners">
+      <center>
+        <?php $funders = get_field('funding_partners'); ?>
+          <?php foreach ($funders as $logo) {
             if (!empty($logo)): ?>
               <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
             <?php endif; } ?>
-
-            <section class="index-section" style="justify-content: center;">
-              <button type="button" class="btn btn-outline-light btn-lg">
-                <a href="/get-involved">get involved</a>
-              </button>
-            </section>
       </center>
     </section>
   </section>

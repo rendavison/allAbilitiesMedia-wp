@@ -2,6 +2,14 @@ a {
   font-weight: bold;
 }
 
+button {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 h1,
 h2,
 h3 {

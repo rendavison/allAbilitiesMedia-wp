@@ -1,7 +1,7 @@
 footer {
   @include make-row();
   padding: 3rem 0;
-  background-color: $primary;
+  background-color: #eee;
 
   .logos {
     @include make-col-ready();
@@ -54,7 +54,7 @@ footer {
       font-size: 1.25rem;
       font-weight: 800;
       text-transform: uppercase;
-      color: white;
+      color: $primary;
     }
   }
 }

@@ -10085,6 +10085,10 @@ a {
   font-weight: bold;
 }
 
+button a:hover {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3 {
@@ -10341,6 +10345,24 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   }
 }
 
+.one-third {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.two-thirds {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
 .index-primary,
 .index-secondary,
 .index-accent,
@@ -10355,12 +10377,6 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   box-sizing: border-box;
   align-content: center;
   /*default styling for all home page section images*/
-  /*.highlight p {
-      display: inline;
-      background-color: $red;
-      white-space: pre-wrap;
-    }/*
-
   /*.headline-right {
     @include make-col(9);
     @include make-col-offset(3);
@@ -10394,7 +10410,7 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
-  border-radius: 0;
+  border-radius: 15px;
 }
 @media (max-width: 768px) {
   .index-primary button,
@@ -10423,8 +10439,7 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
+  /*@include make-col(6);*/
   width: 100%;
   height: auto;
 }
@@ -10455,16 +10470,41 @@ nav .sticky-nav .menu-sticky-menu-container li a {
 .index-section img.right {
   margin-left: 58.3333333333%;
 }
+.index-primary img.one-third,
+.index-secondary img.one-third,
+.index-accent img.one-third,
+.index-section img.one-third {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.index-primary img.two-thirds,
+.index-secondary img.two-thirds,
+.index-accent img.two-thirds,
+.index-section img.two-thirds {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+.index-primary img.half,
+.index-secondary img.half,
+.index-accent img.half,
+.index-section img.half {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 .index-primary .headline,
+.index-primary .headline-primary,
 .index-primary .headline-right,
 .index-primary .headline-alt,
 .index-secondary .headline,
+.index-secondary .headline-primary,
 .index-secondary .headline-right,
 .index-secondary .headline-alt,
 .index-accent .headline,
+.index-accent .headline-primary,
 .index-accent .headline-right,
 .index-accent .headline-alt,
 .index-section .headline,
+.index-section .headline-primary,
 .index-section .headline-right,
 .index-section .headline-alt {
   position: relative;
@@ -10477,15 +10517,19 @@ nav .sticky-nav .menu-sticky-menu-container li a {
 }
 @media (max-width: 768px) {
   .index-primary .headline,
+.index-primary .headline-primary,
 .index-primary .headline-right,
 .index-primary .headline-alt,
 .index-secondary .headline,
+.index-secondary .headline-primary,
 .index-secondary .headline-right,
 .index-secondary .headline-alt,
 .index-accent .headline,
+.index-accent .headline-primary,
 .index-accent .headline-right,
 .index-accent .headline-alt,
 .index-section .headline,
+.index-section .headline-primary,
 .index-section .headline-right,
 .index-section .headline-alt {
     font-size: 2rem;
@@ -10521,7 +10565,7 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   max-width: 75%;
   margin-left: 3rem;
   color: white;
-  font-size: 3.25rem;
+  font-size: 2.75rem;
   font-weight: 800;
 }
 @media (max-width: 768px) {
@@ -10534,6 +10578,14 @@ nav .sticky-nav .menu-sticky-menu-container li a {
     margin-left: 8.3333333333%;
     font-size: 2rem;
   }
+}
+.index-primary .highlight p,
+.index-secondary .highlight p,
+.index-accent .highlight p,
+.index-section .highlight p {
+  display: inline;
+  background-color: #ff6047;
+  white-space: pre-wrap;
 }
 .index-primary .menu-see-our-work-container,
 .index-secondary .menu-see-our-work-container,
@@ -10562,7 +10614,7 @@ nav .sticky-nav .menu-sticky-menu-container li a {
 .index-section .menu-see-our-work-container li {
   margin: 0 1rem;
   min-width: 25%;
-  border-width: 3px;
+  border-width: 2px;
 }
 .index-primary .menu-see-our-work-container li:hover a,
 .index-secondary .menu-see-our-work-container li:hover a,
@@ -10596,7 +10648,7 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   margin-left: 33.3333333333%;
   position: absolute;
   padding: 2rem;
-  background: #ff6047;
+  background: #2c7d7d;
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
@@ -10630,7 +10682,6 @@ nav .sticky-nav .menu-sticky-menu-container li a {
 
 /*Our Partners*/
 #partners {
-  margin-left: 3rem;
   padding-top: 1rem;
   align-items: center;
 }
@@ -10647,20 +10698,24 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   padding-left: 15px;
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
+  margin: 0 1.5rem;
 }
 @media (max-width: 768px) {
   #partners img {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
   }
 }
 #partners button {
-  border-width: 3px;
+  border-width: 2px;
 }
 
 /*Button Links*/
 button a {
   color: white;
+}
+button:hover.primary a {
+  color: #002c60;
 }
 button:hover a {
   color: #2c7d7d;
@@ -10672,7 +10727,7 @@ footer {
   margin-right: -15px;
   margin-left: -15px;
   padding: 3rem 0;
-  background-color: #002c60;
+  background-color: #eee;
 }
 footer .logos {
   position: relative;
@@ -10737,7 +10792,7 @@ footer .menu-footer-links-container li a {
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: white;
+  color: #002c60;
 }
 
 #text-page,
