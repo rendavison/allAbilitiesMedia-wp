@@ -51,6 +51,11 @@
       padding: 0.5rem;
       background: $secondary;
 
+      .long {
+        @include make-col-ready();
+        @include make-col(10);
+      }
+
       h3.card-title {
         color: white;
         text-align: center;
@@ -60,7 +65,7 @@
         color: white;
 
         .show-info {
-          height: 18rem;
+          height: auto;
 
           @media (max-width: 768px) {
             height: auto;

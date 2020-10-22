@@ -10031,6 +10031,14 @@ h3 {
   padding: 0.5rem;
   background: #2c7d7d;
 }
+#podcast-feed .shows .card .long {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+}
 #podcast-feed .shows .card h3.card-title {
   color: white;
   text-align: center;
@@ -10039,7 +10047,7 @@ h3 {
   color: white;
 }
 #podcast-feed .shows .card .card-body .show-info {
-  height: 18rem;
+  height: auto;
 }
 @media (max-width: 768px) {
   #podcast-feed .shows .card .card-body .show-info {
@@ -10114,7 +10122,7 @@ h4 {
 /*Header Image*/
 .header {
   width: 100%;
-  height: 300px;
+  height: 500px;
   margin: 0;
   background: transparent;
 }
@@ -10127,7 +10135,7 @@ h4 {
 .header img {
   position: absolute;
   width: 100%;
-  height: 300px;
+  height: 500px;
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
@@ -10139,7 +10147,7 @@ h4 {
   padding-left: 15px;
   margin-left: 8.3333333333%;
   display: inline-block;
-  margin-top: 6rem;
+  margin-top: 10rem;
   margin-bottom: 1rem;
   width: auto;
   background-color: #2c7d7d;

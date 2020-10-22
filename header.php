@@ -14,7 +14,7 @@
       <section class="primary">
         <div id="logo">
           <a href="/allAbilities" aria-label="Links home">
-            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/AAM_logo-20-1.png"/>
+            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/10/AAM_logoss-22.png"/>
           </a>
           <!--<span class="title">
             <a href="/" aria-label="All-Abilities Media; links home">All-Abilities Media</a>
