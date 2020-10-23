@@ -10126,7 +10126,7 @@ h4 {
 /*Header Image*/
 .header {
   width: 100%;
-  height: 500px;
+  height: 400px;
   margin: 0;
   background: transparent;
 }
@@ -10139,7 +10139,7 @@ h4 {
 .header img {
   position: absolute;
   width: 100%;
-  height: 500px;
+  height: 400px;
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
@@ -10799,6 +10799,7 @@ footer .menu-footer-links-container li a {
 #podcast-overview,
 #template-gallery {
   /*Text Default Styles*/
+  /*Our Team*/
   /*About Page*/
   /*Podcast Overview*/
 }
@@ -10830,6 +10831,47 @@ footer .menu-footer-links-container li a {
     max-width: 100%;
     margin-left: 0;
   }
+}
+#text-page .team-section,
+#podcast-overview .team-section,
+#template-gallery .team-section {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 83.3333333333%;
+  max-width: 83.3333333333%;
+  margin-left: 8.3333333333%;
+  padding: 4rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  #text-page .team-section,
+#podcast-overview .team-section,
+#template-gallery .team-section {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+}
+#text-page .team-section img,
+#podcast-overview .team-section img,
+#template-gallery .team-section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+#text-page .team-section .staff-bio,
+#podcast-overview .team-section .staff-bio,
+#template-gallery .team-section .staff-bio {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0;
 }
 #text-page .about-section,
 #podcast-overview .about-section,
