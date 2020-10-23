@@ -2,7 +2,7 @@
     <div class="container-fluid" aria-hidden="true">
       <footer>
         <section class="logos">
-          <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/UnPressLogoWhite1-e1601238632202.jpg" style="margin-bottom: 2rem;"/>
+          <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/10/UnabridgedPress_LogoTransparent.png" style="margin-bottom: 2rem;"/>
           <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" /><br />
         </section>
 
