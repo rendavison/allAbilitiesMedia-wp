@@ -45,6 +45,13 @@ function my_sidebars()
       'id' => 'get-involved-sidebar'
     )
   );
+
+  register_sidebar(
+    array(
+      'name' => 'Donate Sidebar',
+      'id' => 'donate-sidebar'
+    )
+  );
 }
 add_action('widgets_init', 'my_sidebars');
 

@@ -1,3 +1,7 @@
+body {
+  color: $body-copy;
+}
+
 a {
   font-weight: bold;
 }
@@ -12,7 +16,8 @@ button {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: $font-family-header;
   font-weight: bold;
   color: $secondary;
@@ -39,5 +44,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 130%;
+  color: $body-copy;
 }

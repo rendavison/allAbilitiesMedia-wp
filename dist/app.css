@@ -10081,6 +10081,10 @@ h3 {
   width: 100%;
 }
 
+body {
+  color: #222;
+}
+
 a {
   font-weight: bold;
 }
@@ -10091,7 +10095,8 @@ button a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: montserrat, sans-serif;
   font-weight: bold;
   color: #2c7d7d;
@@ -10120,7 +10125,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 130%;
+  color: #222;
 }
 
 /*Header Image*/
@@ -10798,17 +10805,12 @@ footer .menu-footer-links-container li a {
   color: #002c60;
 }
 
-#text-page,
-#podcast-overview,
-#template-gallery {
+#text-page {
   /*Text Default Styles*/
-  /*Our Team*/
   /*About Page*/
-  /*Podcast Overview*/
+  /*Our Team*/
 }
-#text-page h1,
-#podcast-overview h1,
-#template-gallery h1 {
+#text-page h1 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -10819,25 +10821,19 @@ footer .menu-footer-links-container li a {
   width: auto;
 }
 @media (max-width: 1023px) {
-  #text-page h1,
-#podcast-overview h1,
-#template-gallery h1 {
+  #text-page h1 {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 }
 @media (max-width: 768px) {
-  #text-page h1,
-#podcast-overview h1,
-#template-gallery h1 {
+  #text-page h1 {
     flex: 0 0 100%;
     max-width: 100%;
     margin-left: 0;
   }
 }
-#text-page .no-sidebar,
-#podcast-overview .no-sidebar,
-#template-gallery .no-sidebar {
+#text-page .no-sidebar {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -10850,16 +10846,41 @@ footer .menu-footer-links-container li a {
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  #text-page .no-sidebar,
-#podcast-overview .no-sidebar,
-#template-gallery .no-sidebar {
+  #text-page .no-sidebar {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 }
-#text-page .team-section,
-#podcast-overview .team-section,
-#template-gallery .team-section {
+#text-page .about-section {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 8.3333333333%;
+  padding: 4rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  #text-page .about-section {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+  }
+}
+#text-page .about-section .about-photos {
+  background-color: #ff6047;
+  padding: 4rem 0;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+#text-page .about-section .about-photos img {
+  width: auto;
+}
+#text-page .team-section {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -10872,24 +10893,18 @@ footer .menu-footer-links-container li a {
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  #text-page .team-section,
-#podcast-overview .team-section,
-#template-gallery .team-section {
+  #text-page .team-section {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 }
-#text-page .team-section img,
-#podcast-overview .team-section img,
-#template-gallery .team-section img {
+#text-page .team-section img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 350px;
 }
-#text-page .team-section .staff-bio,
-#podcast-overview .team-section .staff-bio,
-#template-gallery .team-section .staff-bio {
+#text-page .team-section .staff-bio {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -10898,104 +10913,8 @@ footer .menu-footer-links-container li a {
   max-width: 25%;
   padding: 0;
 }
-#text-page .about-section,
-#podcast-overview .about-section,
-#template-gallery .about-section {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-left: 8.3333333333%;
-  padding: 4rem 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-@media (max-width: 768px) {
-  #text-page .about-section,
-#podcast-overview .about-section,
-#template-gallery .about-section {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-}
-#text-page .about-section .about-photos,
-#podcast-overview .about-section .about-photos,
-#template-gallery .about-section .about-photos {
-  background-color: #ff6047;
-  padding: 4rem 0;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-#text-page .about-section .about-photos img,
-#podcast-overview .about-section .about-photos img,
-#template-gallery .about-section .about-photos img {
-  width: auto;
-}
-#text-page h3.desc,
-#podcast-overview h3.desc,
-#template-gallery h3.desc {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding: 3rem 0;
-  margin: 0;
-  margin-left: 15%;
-  box-sizing: border-box;
-}
-#text-page h3.desc p,
-#podcast-overview h3.desc p,
-#template-gallery h3.desc p {
-  width: 80%;
-  color: #002c60;
-}
-#text-page .show,
-#text-page .show-alt,
-#podcast-overview .show,
-#podcast-overview .show-alt,
-#template-gallery .show,
-#template-gallery .show-alt {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-left: 0;
-  padding: 0;
-  margin: 0;
-  background-color: #2c7d7d;
-  /*img {
-    @include make-col-ready();
-    @include make-col(4);
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    height: auto;
-    overflow: hidden;
-  }*/
-}
-@media (max-width: 768px) {
-  #text-page .show,
-#text-page .show-alt,
-#podcast-overview .show,
-#podcast-overview .show-alt,
-#template-gallery .show,
-#template-gallery .show-alt {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-}
-#text-page .show .show-info,
-#text-page .show-alt .show-info,
-#podcast-overview .show .show-info,
-#podcast-overview .show-alt .show-info,
-#template-gallery .show .show-info,
-#template-gallery .show-alt .show-info {
+
+#video-gallery {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -11003,59 +10922,15 @@ footer .menu-footer-links-container li a {
   flex: 0 0 83.3333333333%;
   max-width: 83.3333333333%;
   margin-left: 8.3333333333%;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  color: white;
-  box-sizing: border-box;
 }
-#text-page .show .show-info img,
-#text-page .show-alt .show-info img,
-#podcast-overview .show .show-info img,
-#podcast-overview .show-alt .show-info img,
-#template-gallery .show .show-info img,
-#template-gallery .show-alt .show-info img {
-  padding-top: 1rem;
-  margin-right: 0.75rem;
-  margin-bottom: 0.5rem;
-  width: 32%;
-  float: left;
+#video-gallery h3 {
+  color: #002c60;
+  padding: 2rem 0;
 }
-#text-page .show .show-info h3,
-#text-page .show-alt .show-info h3,
-#podcast-overview .show .show-info h3,
-#podcast-overview .show-alt .show-info h3,
-#template-gallery .show .show-info h3,
-#template-gallery .show-alt .show-info h3 {
-  margin: 0;
-  padding: 0;
-  color: white;
-  text-align: center;
-}
-#text-page .show .show-info p,
-#text-page .show-alt .show-info p,
-#podcast-overview .show .show-info p,
-#podcast-overview .show-alt .show-info p,
-#template-gallery .show .show-info p,
-#template-gallery .show-alt .show-info p {
-  padding-top: 0.5rem;
-  width: 65%;
-  height: 18rem;
-  float: left;
-}
-#text-page .show .show-info button,
-#text-page .show-alt .show-info button,
-#podcast-overview .show .show-info button,
-#podcast-overview .show-alt .show-info button,
-#template-gallery .show .show-info button,
-#template-gallery .show-alt .show-info button {
-  border-radius: 0;
-  border-width: 3px;
-}
-#text-page .show-alt,
-#podcast-overview .show-alt,
-#template-gallery .show-alt {
-  background-color: #555;
+#video-gallery .video-title {
+  color: #222;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 #about-sidebar,
