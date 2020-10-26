@@ -10815,8 +10815,8 @@ footer .menu-footer-links-container li a {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
   margin-left: 8.3333333333%;
   width: auto;
 }
@@ -10934,33 +10934,38 @@ footer .menu-footer-links-container li a {
 }
 
 #about-sidebar,
-#get-involved-sidebar {
+#get-involved-sidebar,
+#donate-sidebar {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
   margin-left: 8.3333333333%;
   margin-top: 4rem;
 }
 @media (max-width: 768px) {
   #about-sidebar,
-#get-involved-sidebar {
+#get-involved-sidebar,
+#donate-sidebar {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
   }
 }
 #about-sidebar img,
-#get-involved-sidebar img {
+#get-involved-sidebar img,
+#donate-sidebar img {
   width: 100%;
 }
 #about-sidebar h2,
-#get-involved-sidebar h2 {
+#get-involved-sidebar h2,
+#donate-sidebar h2 {
   max-width: 100%;
 }
 #about-sidebar .link-out,
-#get-involved-sidebar .link-out {
+#get-involved-sidebar .link-out,
+#donate-sidebar .link-out {
   width: auto;
   max-width: 100%;
   padding: 1rem;
@@ -10969,7 +10974,8 @@ footer .menu-footer-links-container li a {
   box-sizing: border-box;
 }
 #about-sidebar li,
-#get-involved-sidebar li {
+#get-involved-sidebar li,
+#donate-sidebar li {
   list-style-type: none;
   margin: 2rem 0;
 }
@@ -10978,10 +10984,16 @@ footer .menu-footer-links-container li a {
 #get-involved-sidebar {
   margin-left: 4.1666666667%;
   padding-left: 0;
+  margin-top: 2rem;
 }
 #get-involved-sidebar h3 {
   padding-left: 15px;
 }
 #get-involved-sidebar li {
   margin-top: 0;
+}
+
+#donate-sidebar {
+  flex: 0 0 25%;
+  max-width: 25%;
 }

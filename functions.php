@@ -56,8 +56,8 @@ function my_sidebars()
 add_action('widgets_init', 'my_sidebars');
 
 //Feed Validator Cron Workaround
-add_filter('cron_request', 'my_increase_cron_request_timeout');
-    function my_increase_cron_request_timeout($args) {
-        $args['args']['timeout'] = 1; // Seconds. Increase as needed.
-   return $args;
-}
+//add_filter('cron_request', 'my_increase_cron_request_timeout');
+//    function my_increase_cron_request_timeout($args) {
+//        $args['args']['timeout'] = 1; // Seconds. Increase as needed.
+//   return $args;
+//}

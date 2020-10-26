@@ -82,6 +82,20 @@
     </section>
   </section>
 
+  <!-- Funders -->
+  <section class="index-section" style="margin-bottom: 3rem;">
+    <div class="headline-primary">Funding Partners</div>
+    <section id="partners">
+      <center>
+        <?php $funders = get_field('funding_partners'); ?>
+          <?php foreach ($funders as $logo) {
+            if (!empty($logo)): ?>
+              <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
+            <?php endif; } ?>
+      </center>
+    </section>
+  </section>
+
   <!-- Partners -->
   <section class="index-primary">
     <div class="headline">News Partners</div>
@@ -104,20 +118,6 @@
                 <a href="/get-involved" aria-label="get involved">get involved</a>
               </button>
             </section>
-      </center>
-    </section>
-  </section>
-
-  <!-- Funders -->
-  <section class="index-section">
-    <div class="headline-primary">Funding Partners</div>
-    <section id="partners">
-      <center>
-        <?php $funders = get_field('funding_partners'); ?>
-          <?php foreach ($funders as $logo) {
-            if (!empty($logo)): ?>
-              <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
-            <?php endif; } ?>
       </center>
     </section>
   </section>

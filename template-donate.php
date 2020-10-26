@@ -18,7 +18,7 @@ Template Name: Donate
       <?php get_template_part('includes/section', 'content');?>
     </section>
 
-    <div id="about-sidebar">
+    <div id="donate-sidebar">
       <?php if(is_active_sidebar('donate-sidebar')):?>
         <?php dynamic_sidebar('donate-sidebar');?>
       <?php endif;?>

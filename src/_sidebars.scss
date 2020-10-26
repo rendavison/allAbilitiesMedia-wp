@@ -1,7 +1,8 @@
 #about-sidebar,
-#get-involved-sidebar {
+#get-involved-sidebar,
+#donate-sidebar {
   @include make-col-ready();
-  @include make-col(3);
+  @include make-col(2);
   @include make-col-offset(1);
   margin-top: 4rem;
 
@@ -37,6 +38,7 @@
 #get-involved-sidebar {
   @include make-col-offset(0.5);
   padding-left: 0;
+  margin-top: 2rem;
 
   h3 {
     padding-left: 15px;
@@ -45,4 +47,8 @@
   li {
     margin-top: 0;
   }
+}
+
+#donate-sidebar {
+  @include make-col(3);
 }
