@@ -2,8 +2,13 @@
     <div class="container-fluid" aria-hidden="true">
       <footer>
         <section class="logos">
-          <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/10/UnabridgedPress_LogoTransparent.png" style="margin-bottom: 2rem;"/>
-          <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" /><br />
+          <a href="https://www.unabridgedpress.com/">
+            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/10/UnabridgedPress_LogoTransparent.png" style="margin-bottom: 2rem;" alt="Unabridged Press logo; links to Unabridged Press website"/>
+          </a>
+          <a href="https://www.pointpark.edu/academics/schools/schoolofcommunication/CenterforMediaInnovation/index">
+            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" alt="Center for Media Innovation logo; links to CMI website"/>
+          </a>
+          <br />
         </section>
 
         <section role="navigation">
