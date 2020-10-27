@@ -10226,6 +10226,7 @@ nav .primary {
   padding-top: 0.75rem;
   box-sizing: border-box;
   align-items: center;
+  /*Make sure mobile nav is hidden on desktop*/
   /*Buttons*/
 }
 nav .primary #logo {
@@ -10245,6 +10246,12 @@ nav .primary #logo img {
   height: auto;
   align-items: center;
   justify-content: center;
+}
+nav .primary #mobile-nav {
+  display: none;
+}
+nav .primary #mobile-links {
+  display: none;
 }
 nav .primary .menu-top-buttons-container {
   position: relative;
@@ -10339,9 +10346,9 @@ nav .sticky-nav .menu-sticky-menu-container li .sub-menu li a {
 }
 
 .menu-secondary-navigation-container {
-  flex: 0 0 45.8333333333%;
-  max-width: 45.8333333333%;
-  margin-left: 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 45.8333333333%;
 }
 
 /*extra classes for sticky header on scroll*/
@@ -10368,6 +10375,41 @@ nav .sticky-nav .menu-sticky-menu-container li .sub-menu li a {
 }
 
 /****MOBILE STYLING*****/
+nav .primary {
+  /*Mobile nav & icon*/
+}
+@media (max-width: 768px) {
+  nav .primary #mobile-nav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    color: #002c60;
+    font-size: 1.75rem;
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+  nav .primary #mobile-links {
+    display: none;
+  }
+  nav .primary #mobile-links .menu-mobile-nav-container {
+    list-style-type: none;
+  }
+  nav .primary #mobile-links .menu-mobile-nav-container .menu {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background-color: #002c60;
+    padding: 0.5rem 1rem;
+    z-index: 9999999;
+  }
+  nav .primary #mobile-links .menu-mobile-nav-container .menu li a {
+    color: white;
+  }
+  nav .primary #mobile-links.show {
+    display: block;
+  }
+}
 @media (max-width: 380px) {
   nav .primary {
     padding-top: 0.33rem;
@@ -10416,9 +10458,9 @@ nav .sticky-nav .menu-sticky-menu-container li .sub-menu li a {
 }
 @media (max-width: 1023px) {
   nav .secondary .menu-secondary-navigation-container {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-left: 0;
+    flex: 0 0 75%;
+    max-width: 75%;
+    margin-left: 22.9166666667%;
   }
 }
 @media (max-width: 768px) {

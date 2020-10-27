@@ -1,1 +1,2 @@
-require("./sticky_header");
+//require("./sticky_header");
+require("./mobile_nav");

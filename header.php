@@ -6,8 +6,11 @@
     <title>All Abilities Media</title>
 
     <?php wp_head();?>
-    <!-- Import Adobe Font -->
+
+    <!-- FONTS AND STYLESHEETS -->
     <link rel="stylesheet" href="https://use.typekit.net/kma0tcc.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
   </head>
   <body>
     <a href="#main-content" class="skip-main">Skip to main content</a>
@@ -27,6 +30,19 @@
           )
         );
         ?>
+
+        <!-- Mobile nav -->
+        <div id="mobile-nav" role="navigation"><i class="fas fa-bars"></i></div>
+        <section id="mobile-links">
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'mobile-nav'
+            )
+          );
+          ?>
+        </section>
+
       </section>
       <section class="secondary">
         <?php
@@ -37,6 +53,7 @@
         );
         ?>
       </section>
+      <!--
       <section class="sticky-nav">
         <?php
         wp_nav_menu(
@@ -46,4 +63,5 @@
         );
         ?>
       </section>
+    -->
     </nav>

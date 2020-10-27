@@ -31,6 +31,15 @@ nav {
       }
     }
 
+    /*Make sure mobile nav is hidden on desktop*/
+    #mobile-nav {
+      display: none;
+    }
+
+    #mobile-links {
+      display: none;
+    }
+
     /*Buttons*/
     .menu-top-buttons-container {
       @include make-col-ready();
@@ -117,8 +126,8 @@ nav {
 }
 
 .menu-secondary-navigation-container {
-  @include make-col(5.5);
-  @include make-col-offset(6);
+  @include make-col(6);
+  @include make-col-offset(5.5);
 }
 
 /*extra classes for sticky header on scroll*/
@@ -148,6 +157,46 @@ nav {
 
 nav {
   .primary {
+
+    /*Mobile nav & icon*/
+    @media (max-width: 768px) {
+      #mobile-nav {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        color: $primary;
+        font-size: 1.75rem;
+        padding-right: 2rem;
+        cursor: pointer;
+      }
+
+      #mobile-links {
+        display: none;
+
+        .menu-mobile-nav-container {
+          list-style-type: none;
+
+          .menu {
+            display: block;
+            position: absolute;
+            top: 3rem;
+            right: 3rem;
+            background-color: $primary;
+            padding: 0.5rem 1rem;
+            z-index: 9999999;
+
+            li a {
+              color: white;
+            }
+          }
+        }
+
+        &.show {
+          display: block;
+        }
+      }
+    }
+
     @media (max-width: 380px) {
       padding-top: 0.33rem;
       height: 4rem;
@@ -188,8 +237,8 @@ nav {
 
     .menu-secondary-navigation-container {
       @media (max-width: 1023px) {
-        @include make-col(12);
-        @include make-col-offset(0);
+        @include make-col(9);
+        @include make-col-offset(2.75);
       }
 
       @media (max-width: 768px) {
