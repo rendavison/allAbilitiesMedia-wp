@@ -11,7 +11,7 @@
   </section>
 
   <!-- Intro Text -->
-  <section class="index-section">
+  <section class="index-section" id="#main-content" tabindex="-1">
     <div class="headline-alt">
       <span class="highlight">
         <?php the_field('intro_text'); ?>
@@ -85,7 +85,7 @@
   <!-- Funders -->
   <section class="index-section" style="margin-bottom: 3rem;">
     <div class="headline-primary">Funding Partners</div>
-    <section id="partners">
+    <section class="partners">
       <center>
         <?php $funders = get_field('funding_partners'); ?>
           <?php foreach ($funders as $logo) {
@@ -99,18 +99,18 @@
   <!-- Partners -->
   <section class="index-primary">
     <div class="headline">News Partners</div>
-    <section id="partners">
+    <section class="partners">
       <center>
         <?php $partners = get_field('partners_logos'); ?>
         <?php $sites = get_field('partners_links'); ?>
           <?php foreach(array_combine($partners, $sites) as $logo => $site) {
-              if (!empty($logo)): ?>
-                <?php if ( $site ): ?>
-                  <a href="<?php echo esc_url( $site ); ?>">
-                    <img src="<?php echo esc_url($logo); ?>" alt="<?php echo esc_attr($logo); ?>" />
-                  </a>
-                <?php endif; ?>
-              <?php endif;
+            if (!empty($logo)): ?>
+              <?php if ( $site ): ?>
+                <a href="<?php echo esc_url( $site ); ?>">
+                  <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
+                </a>
+              <?php endif; ?>
+            <?php endif;
            } ?>
 
             <section class="index-section" style="justify-content: center;">

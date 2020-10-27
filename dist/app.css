@@ -9986,17 +9986,18 @@ h3 {
   max-width: 83.3333333333%;
   margin-left: 8.3333333333%;
 }
-.archive h3.desc {
+.archive h2.desc {
   padding: 2rem 0;
   margin: 0;
+  font-size: 1.75rem;
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  .archive h3.desc {
+  .archive h2.desc {
     font-size: 1.5rem;
   }
 }
-.archive h3.desc p {
+.archive h2.desc p {
   width: 100%;
   color: #002c60;
 }
@@ -10128,6 +10129,36 @@ h4 {
   font-size: 1.5rem;
   line-height: 130%;
   color: #222;
+}
+
+/*Skip to main content hidden link*/
+/*Courtsey of NC State University*/
+/*https://accessibility.oit.ncsu.edu/it-accessibility-at-nc-state/developers/accessibility-handbook/mouse-and-keyboard-events/skip-to-main-content/*/
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color: #000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 10px 35%;
+  padding: 5px;
+  border-radius: 15px;
+  border: 4px solid yellow;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 999;
 }
 
 /*Header Image*/
@@ -10691,17 +10722,17 @@ nav .sticky-nav .menu-sticky-menu-container li a {
 }
 
 /*Our Partners*/
-#partners {
+.partners {
   padding-top: 1rem;
   align-items: center;
 }
 @media (max-width: 768px) {
-  #partners {
+  .partners {
     margin-top: 0;
     padding-top: 0;
   }
 }
-#partners img {
+.partners img {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -10711,12 +10742,12 @@ nav .sticky-nav .menu-sticky-menu-container li a {
   margin: 0 1.5rem;
 }
 @media (max-width: 768px) {
-  #partners img {
+  .partners img {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 }
-#partners button {
+.partners button {
   border-width: 2px;
 }
 
@@ -10902,7 +10933,7 @@ footer .menu-footer-links-container li a {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 #text-page .team-section .staff-bio {
   position: relative;
@@ -10923,9 +10954,10 @@ footer .menu-footer-links-container li a {
   max-width: 83.3333333333%;
   margin-left: 8.3333333333%;
 }
-#video-gallery h3 {
+#video-gallery h2 {
   color: #002c60;
   padding: 2rem 0;
+  font-size: 1.75rem;
 }
 #video-gallery .video-title {
   color: #222;

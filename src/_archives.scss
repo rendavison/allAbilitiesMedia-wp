@@ -4,9 +4,10 @@
   @include make-col(10);
   @include make-col-offset(1);
 
-  h3.desc {
+  h2.desc {
     padding: 2rem 0;
     margin: 0;
+    font-size: 1.75rem;
     box-sizing: border-box;
 
     @media (max-width: 768px) {

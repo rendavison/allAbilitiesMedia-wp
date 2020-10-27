@@ -13,6 +13,8 @@ Template Name: Text, no sidebar
 <main class="container-fluid" id="text-page" style="padding: 0; margin: 0">
   <?php get_template_part('includes/section', 'header');?>
 
+  <a name="#main-content" tabindex="-1"></a>
+
   <section class="no-sidebar">
     <?php get_template_part('includes/section', 'content');?>
   </section>

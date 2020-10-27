@@ -6,13 +6,15 @@
           <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" /><br />
         </section>
 
-        <?php
-        wp_nav_menu(
-          array(
-            'theme_location' => 'footer-links'
-          )
-        );
-        ?>
+        <section role="navigation">
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'footer-links'
+            )
+          );
+          ?>
+        </section>
       </footer>
     </div>
     <!--Userway widget-->

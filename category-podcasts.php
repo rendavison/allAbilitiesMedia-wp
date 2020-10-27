@@ -10,7 +10,7 @@
   <section class="archive" id="podcast-feed" style="margin-top: 1rem; margin-bottom: 3rem;">
     <section class="row">
 
-      <?php the_archive_description( '<h3 class="desc">', '</h3>' ); ?>
+      <?php the_archive_description( '<h2 class="desc">', '</h2>' ); ?>
 
       <section class="shows">
         <?php get_template_part('includes/section', 'podcasts');?>
