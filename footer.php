@@ -2,16 +2,22 @@
     <div class="container-fluid" aria-hidden="true">
       <footer>
         <section class="logos">
+          <h3>Keep in touch!</h4>
+          <div class="break" aria-hidden="true"></div>
+          <p>
+            <a href="mailto:jennifer@unabridgedpress.com">Send us an email</a> or <a href="/get-involved">get involved.</a>
+          </p>
+          <div class="break" aria-hidden="true"></div>
           <a href="https://www.unabridgedpress.com/">
-            <img src="https://allabilitiesmedia.org/wp-content/uploads/2020/10/UnabridgedPress_LogoTransparent.png" style="margin-bottom: 2rem;" alt="Unabridged Press logo; links to Unabridged Press website"/>
+            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/10/UnabridgedPress_LogoTransparent-e1603910216566.png" alt="Unabridged Press logo; links to Unabridged Press website"/>
           </a>
           <a href="https://www.pointpark.edu/academics/schools/schoolofcommunication/CenterforMediaInnovation/index">
-            <img src="https://allabilitiesmedia.org/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" alt="Center for Media Innovation logo; links to CMI website"/>
+            <img src="https://allabilitiesmedia.org/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" alt="Center for Media Innovation logo; links to CMI website" style="height: 4.5rem"/>
           </a>
           <br />
         </section>
 
-        <section role="navigation">
+        <section role="navigation" class="footer-links">
           <?php
           wp_nav_menu(
             array(

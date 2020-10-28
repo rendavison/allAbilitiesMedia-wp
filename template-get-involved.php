@@ -14,7 +14,7 @@ Template Name: Get Involved
   <section class="row">
     <?php get_template_part('includes/section', 'header');?>
 
-    <a name="#main-content" tabindex="-1"></a>
+    <a name="main-content" tabindex="-1"></a>
 
     <section class="about-section">
       <?php get_template_part('includes/section', 'content');?>

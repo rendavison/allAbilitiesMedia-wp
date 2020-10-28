@@ -10237,6 +10237,7 @@ nav .primary #logo {
   padding-left: 15px;
   flex: 0 0 29.1666666667%;
   max-width: 29.1666666667%;
+  margin-left: 0;
   margin-left: 3rem;
 }
 nav .primary #logo a:hover {
@@ -10887,17 +10888,27 @@ footer {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  padding: 3rem 0;
+  padding: 2rem 0;
   background-color: #eee;
+}
+footer .break {
+  flex-basis: 100%;
+  height: 0;
 }
 footer .logos {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%;
-  margin-left: 66.6666666667%;
+  flex: 0 0 41.6666666667%;
+  max-width: 41.6666666667%;
+  margin-left: 0;
+  padding-left: 0;
+  margin-left: 8.3333333333%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: auto;
 }
 @media (max-width: 1023px) {
   footer .logos {
@@ -10913,47 +10924,64 @@ footer .logos {
     margin-left: 8.3333333333%;
   }
 }
+footer .logos p {
+  margin-bottom: 3rem;
+}
+footer .logos p a {
+  color: #333;
+}
 footer .logos img {
-  width: 100%;
-  height: auto;
+  height: 5rem;
+  width: auto;
 }
-footer .menu {
-  padding: 0;
-  list-style-type: none;
-}
-footer .menu-footer-links-container {
+footer .footer-links {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 16.6666666667%;
-  max-width: 16.6666666667%;
-  color: white;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  margin-left: 16.6666666667%;
 }
 @media (max-width: 1023px) {
-  footer .menu-footer-links-container {
+  footer .footer-links {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
 }
 @media (max-width: 767px) {
-  footer .menu-footer-links-container {
+  footer .footer-links {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
     margin-left: 8.3333333333%;
-    display: flex;
     justify-content: space-between;
     padding-top: 2rem;
   }
 }
-footer .menu-footer-links-container .menu {
+footer .footer-links .menu {
+  padding: 0;
+  list-style-type: none;
+}
+footer .footer-links .menu-footer-links-container {
+  max-width: 50%;
+}
+footer .footer-links .menu-footer-links-container .menu {
   justify-content: space-between;
 }
-footer .menu-footer-links-container li a {
+footer .footer-links .menu-footer-links-container li .sub-menu {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+footer .footer-links .menu-footer-links-container li .sub-menu a {
+  text-transform: none;
+  font-weight: normal;
+}
+footer .footer-links .menu-footer-links-container a {
+  display: inline;
   font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: #002c60;
+  color: #333;
 }
 
 #text-page {

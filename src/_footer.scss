@@ -1,12 +1,23 @@
 footer {
   @include make-row();
-  padding: 3rem 0;
+  padding: 2rem 0;
   background-color: #eee;
+
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
 
   .logos {
     @include make-col-ready();
-    @include make-col(2);
-    @include make-col-offset(8);
+    @include make-col(5);
+    margin-left: 0;
+    padding-left: 0;
+    @include make-col-offset(1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: auto;
 
     @media (max-width: 1023px) {
       @include make-col(4);
@@ -18,23 +29,24 @@ footer {
       @include make-col-offset(1);
     }
 
+    p {
+      margin-bottom: 3rem;
+
+      a {
+        color: #333;
+      }
+    }
+
     img {
-      width: 100%;
-      height: auto;
+      height: 5rem;
+      width: auto;
     }
   }
-  nav {
 
-  }
-  .menu {
-    padding: 0;
-    list-style-type: none;
-  }
-
-  .menu-footer-links-container {
+  .footer-links {
     @include make-col-ready();
-    @include make-col(2);
-    color: white;
+    @include make-col(4);
+    @include make-col-offset(2);
 
     @media (max-width: 1023px) {
       @include make-col(4);
@@ -43,20 +55,40 @@ footer {
     @media (max-width: 767px) {
       @include make-col(10);
       @include make-col-offset(1);
-      display: flex;
       justify-content: space-between;
       padding-top: 2rem;
     }
 
     .menu {
-      justify-content: space-between;
+      padding: 0;
+      list-style-type: none;
     }
 
-    li a {
-      font-size: 1.25rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      color: $primary;
+    .menu-footer-links-container {
+      max-width: 50%;
+
+      .menu {
+        justify-content: space-between;
+      }
+
+      li
+        .sub-menu {
+          padding-left: 1rem;
+          list-style-type: none;
+
+          a {
+            text-transform: none;
+            font-weight: normal;
+          }
+        }
+
+        a {
+          display: inline;
+          font-size: 1.25rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: #333;
+        }
     }
   }
 }

@@ -17,6 +17,7 @@ nav {
     #logo {
       @include make-col-ready();
       @include make-col(3.5);
+      @include make-col-offset(0);
       margin-left: 3rem;
 
       a:hover {
