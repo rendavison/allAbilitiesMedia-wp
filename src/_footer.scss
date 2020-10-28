@@ -1,5 +1,6 @@
 footer {
   @include make-row();
+  display: flex;
   padding: 2rem 0;
   background-color: #eee;
 
@@ -20,13 +21,14 @@ footer {
     margin-bottom: auto;
 
     @media (max-width: 1023px) {
-      @include make-col(4);
-      @include make-col-offset(3);
+      @include make-col(7);
+      @include make-col-offset(1);
     }
 
     @media (max-width: 767px) {
       @include make-col(10);
       @include make-col-offset(1);
+      padding-top: 2rem;
     }
 
     p {
@@ -40,6 +42,21 @@ footer {
     img {
       height: 5rem;
       width: auto;
+      padding-bottom: 1rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        height: auto;
+        padding-bottom: 2rem;
+      }
+
+      &.cmi {
+        height: 4.5rem;
+
+        @media (max-width: 767px) {
+          height: auto;
+        }
+      }
     }
   }
 
@@ -49,14 +66,15 @@ footer {
     @include make-col-offset(2);
 
     @media (max-width: 1023px) {
-      @include make-col(4);
+      @include make-col(3);
+      @include make-col-offset(1);
+      padding-top: 2rem;
     }
 
     @media (max-width: 767px) {
       @include make-col(10);
       @include make-col-offset(1);
-      justify-content: space-between;
-      padding-top: 2rem;
+      order: -1;
     }
 
     .menu {
@@ -65,7 +83,6 @@ footer {
     }
 
     .menu-footer-links-container {
-      max-width: 50%;
 
       .menu {
         justify-content: space-between;

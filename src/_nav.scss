@@ -57,7 +57,7 @@ nav {
         font-size: 1.5rem;
         font-weight: bold;
         text-transform: uppercase;
-        border-radius: 0;
+        border-radius: 1rem;
 
         a {
           color: white;
@@ -180,14 +180,26 @@ nav {
           .menu {
             display: block;
             position: absolute;
-            top: 3rem;
-            right: 3rem;
+            top: 3.5rem;
+            right: 2.5rem;
             background-color: $primary;
             padding: 0.5rem 1rem;
             z-index: 9999999;
 
-            li a {
-              color: white;
+            li {
+              a {
+                color: white;
+              }
+
+              .sub-menu {
+                padding-left: 1rem;
+                list-style-type: none;
+
+                a {
+                  text-transform: none;
+                  font-weight: normal;
+                }
+              }
             }
           }
         }

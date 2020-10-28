@@ -20,7 +20,7 @@
   </section>
 
   <!-- See Our Work -->
-  <section class="index-section" style="padding:0">
+  <section class="index-section">
 
     <section class="index-secondary half-section">
       <div class="headline">See Our Work</div>

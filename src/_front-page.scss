@@ -16,11 +16,19 @@
 .one-third {
   @include make-col-ready();
   @include make-col(4);
+
+  @media (max-width: 768px) {
+    @include make-col(12);
+  }
 }
 
 .two-thirds {
   @include make-col-ready();
   @include make-col(8);
+
+  @media (max-width: 768px) {
+    @include make-col(12);
+  }
 }
 
 .index-primary,
@@ -44,7 +52,7 @@
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: 15px;
+    border-radius: 1rem;
 
     @media (max-width: 768px) {
       font-size: 1.25rem;
@@ -81,14 +89,26 @@
 
     &.one-third {
       @include make-col(4);
+
+      @media (max-width: 768px) {
+        @include make-col(12);
+      }
     }
 
     &.two-thirds {
       @include make-col(8);
+
+      @media (max-width: 768px) {
+        @include make-col(12);
+      }
     }
 
     &.half {
       @include make-col(6);
+
+      @media (max-width: 768px) {
+        @include make-col(12);
+      }
     }
   }
 
@@ -109,11 +129,16 @@
   .headline,
   .headline-primary {
     @include make-col(12);
-    padding-right: 0;
+    padding: 0;
     margin: 0;
     text-align: center;
     color: white;
     font-weight: 800;
+
+    @media (max-width: 768px) {
+      @include make-col(10);
+      @include make-col-offset(1);
+    }
   }
 
   .headline-primary {
@@ -163,6 +188,7 @@
 
     .menu {
       display: flex;
+      padding: 0;
       justify-content: center;
     }
 

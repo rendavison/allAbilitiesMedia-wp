@@ -12,7 +12,7 @@
             <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/10/UnabridgedPress_LogoTransparent-e1603910216566.png" alt="Unabridged Press logo; links to Unabridged Press website"/>
           </a>
           <a href="https://www.pointpark.edu/academics/schools/schoolofcommunication/CenterforMediaInnovation/index">
-            <img src="https://allabilitiesmedia.org/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" alt="Center for Media Innovation logo; links to CMI website" style="height: 4.5rem"/>
+            <img src="https://allabilitiesmedia.org/wp-content/uploads/2020/09/PointPark_CMI_Logo-TransparentBkg.png" alt="Center for Media Innovation logo; links to CMI website" class="cmi"/>
           </a>
           <br />
         </section>
