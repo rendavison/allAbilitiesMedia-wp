@@ -97,28 +97,18 @@
   </section>
 
   <!-- Partners -->
-  <section class="index-primary">
+  <section class="index-primary" style="justify-content: center">
     <div class="headline">News Partners</div>
     <section class="partners">
       <center>
-        <?php $partners = get_field('partners_logos'); ?>
-        <?php $sites = get_field('partners_links'); ?>
-          <?php foreach(array_combine($partners, $sites) as $logo => $site) {
-            if (!empty($logo)): ?>
-              <?php if ( $site ): ?>
-                <a href="<?php echo esc_url( $site ); ?>">
-                  <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>" />
-                </a>
-              <?php endif; ?>
-            <?php endif;
-           } ?>
-
-            <section class="index-section" style="justify-content: center;">
-              <button type="button" class="primary btn btn-outline-light btn-lg">
-                <a href="/get-involved" aria-label="get involved">get involved</a>
-              </button>
-            </section>
+        <?php get_template_part('includes/section', 'content');?>
       </center>
+
+      <section class="index-section" style="justify-content: center;">
+        <button type="button" class="primary btn btn-outline-light btn-lg">
+          <a href="/get-involved" aria-label="get involved">get involved</a>
+        </button>
+      </section>
     </section>
   </section>
 

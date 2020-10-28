@@ -10084,6 +10084,7 @@ h3 {
 
 body {
   color: #222;
+  overflow-x: hidden;
 }
 
 a {
@@ -10126,7 +10127,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 130%;
   color: #222;
 }
@@ -10836,8 +10837,14 @@ nav .primary {
 
 /*Our Partners*/
 .partners {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
   padding-top: 1rem;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .partners {
@@ -11071,6 +11078,7 @@ footer .menu-footer-links-container li a {
   color: #002c60;
   padding: 2rem 0;
   font-size: 1.75rem;
+  font-weight: normal;
 }
 #video-gallery .video-title {
   color: #222;

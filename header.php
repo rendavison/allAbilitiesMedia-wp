@@ -20,7 +20,7 @@
       <section class="primary">
         <div id="logo">
           <a href="/" aria-label="Links home">
-            <img src="http://localhost:8080/allAbilities/wp-content/uploads/2020/10/AAM_logo_final-23-1.png"/>
+            <img src="https://allabilitiesmedia.org/wp-content/uploads/2020/10/AAM_logo_final-23-1.png"/>
           </a>
         </div>
         <?php
