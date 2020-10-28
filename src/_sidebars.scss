@@ -8,6 +8,9 @@
 
   @media (max-width: 768px) {
     @include make-col(10);
+    @include make-col-offset(1);
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 
   img {
@@ -51,4 +54,11 @@
 
 #donate-sidebar {
   @include make-col(3);
+
+  @media (max-width: 768px) {
+    @include make-col(10);
+    @include make-col-offset(1);
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 }

@@ -9990,6 +9990,7 @@ h3 {
   padding: 2rem 0;
   margin: 0;
   font-size: 1.75rem;
+  font-weight: normal;
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
@@ -10013,6 +10014,7 @@ h3 {
   border: 0;
   border-radius: 0;
   background: #eee;
+  border-radius: 1rem;
 }
 @media (max-width: 768px) {
   .archive .card {
@@ -10031,6 +10033,7 @@ h3 {
 #podcast-feed .shows .card {
   padding: 0.5rem;
   background: #2c7d7d;
+  border-radius: 1rem;
 }
 #podcast-feed .shows .card .long {
   position: relative;
@@ -10066,6 +10069,10 @@ h3 {
     width: 100%;
     height: auto;
   }
+}
+#podcast-feed .shows button {
+  border-radius: 1rem;
+  margin-top: 1rem;
 }
 @media (max-width: 768px) {
   #podcast-feed .shows button {
@@ -10171,6 +10178,7 @@ a.skip-main:focus, a.skip-main:active {
 }
 @media (max-width: 768px) {
   .header {
+    height: 300px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -10183,6 +10191,11 @@ a.skip-main:focus, a.skip-main:active {
   z-index: -1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 767px) {
+  .header img {
+    height: 300px;
+  }
 }
 .header h1 {
   position: relative;
@@ -10201,7 +10214,12 @@ a.skip-main:focus, a.skip-main:active {
 }
 @media (max-width: 767px) {
   .header h1 {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+    margin-left: 8.3333333333%;
     text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 0;
   }
 }
 
@@ -10734,7 +10752,7 @@ nav .primary {
 .index-section .headline-primary,
 .index-section .headline-right,
 .index-section .headline-alt {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 .index-primary .headline,
@@ -10793,7 +10811,7 @@ nav .primary {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
     margin-left: 8.3333333333%;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 .index-primary .highlight p,
@@ -10995,19 +11013,19 @@ footer .logos p a {
   color: #333;
 }
 footer .logos img {
-  height: 5rem;
+  height: 6rem;
   width: auto;
   padding-bottom: 1rem;
 }
 @media (max-width: 767px) {
   footer .logos img {
-    width: 100%;
+    width: 75%;
     height: auto;
     padding-bottom: 2rem;
   }
 }
 footer .logos img.cmi {
-  height: 4.5rem;
+  height: 5.5rem;
 }
 @media (max-width: 767px) {
   footer .logos img.cmi {
@@ -11063,32 +11081,8 @@ footer .footer-links .menu-footer-links-container a {
 }
 
 #text-page {
-  /*Text Default Styles*/
   /*About Page*/
   /*Our Team*/
-}
-#text-page h1 {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 58.3333333333%;
-  max-width: 58.3333333333%;
-  margin-left: 8.3333333333%;
-  width: auto;
-}
-@media (max-width: 1023px) {
-  #text-page h1 {
-    flex: 0 0 83.3333333333%;
-    max-width: 83.3333333333%;
-  }
-}
-@media (max-width: 768px) {
-  #text-page h1 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-left: 0;
-  }
 }
 #text-page .no-sidebar {
   position: relative;
@@ -11106,6 +11100,7 @@ footer .footer-links .menu-footer-links-container a {
   #text-page .no-sidebar {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
+    margin-left: 8.3333333333%;
   }
 }
 #text-page .about-section {
@@ -11124,18 +11119,8 @@ footer .footer-links .menu-footer-links-container a {
   #text-page .about-section {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
+    padding: 2rem 0;
   }
-}
-#text-page .about-section .about-photos {
-  background-color: #ff6047;
-  padding: 4rem 0;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-#text-page .about-section .about-photos img {
-  width: auto;
 }
 #text-page .team-section {
   position: relative;
@@ -11153,6 +11138,7 @@ footer .footer-links .menu-footer-links-container a {
   #text-page .team-section {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
+    padding: 2rem 0;
   }
 }
 #text-page .team-section img {
@@ -11210,6 +11196,9 @@ footer .footer-links .menu-footer-links-container a {
 #donate-sidebar {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
+    margin-left: 8.3333333333%;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 #about-sidebar img,
@@ -11255,4 +11244,13 @@ footer .footer-links .menu-footer-links-container a {
 #donate-sidebar {
   flex: 0 0 25%;
   max-width: 25%;
+}
+@media (max-width: 768px) {
+  #donate-sidebar {
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+    margin-left: 8.3333333333%;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 }

@@ -1,22 +1,5 @@
 #text-page {
 
-  /*Text Default Styles*/
-  h1 {
-    @include make-col-ready();
-    @include make-col(7);
-    @include make-col-offset(1);
-    width: auto;
-
-    @media (max-width: 1023px) {
-      @include make-col(10);
-    }
-
-    @media (max-width: 768px) {
-      @include make-col(12);
-      @include make-col-offset(0);
-    }
-  }
-
   .no-sidebar {
     @include make-col-ready();
     @include make-col(8);
@@ -27,6 +10,7 @@
 
     @media (max-width: 768px) {
       @include make-col(10);
+      @include make-col-offset(1);
     }
   }
 
@@ -41,19 +25,7 @@
 
     @media (max-width: 768px) {
       @include make-col(10);
-    }
-
-    .about-photos {
-      background-color: $red;
-      padding: 4rem 0;
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-      width: 100%;
-      box-sizing: border-box;
-
-      img {
-        width: auto;
-      }
+      padding: 2rem 0;
     }
   }
 
@@ -68,6 +40,7 @@
 
     @media (max-width: 768px) {
       @include make-col(10);
+      padding: 2rem 0;
     }
 
     img {

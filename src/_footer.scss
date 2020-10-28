@@ -40,18 +40,18 @@ footer {
     }
 
     img {
-      height: 5rem;
+      height: 6rem;
       width: auto;
       padding-bottom: 1rem;
 
       @media (max-width: 767px) {
-        width: 100%;
+        width: 75%;
         height: auto;
         padding-bottom: 2rem;
       }
 
       &.cmi {
-        height: 4.5rem;
+        height: 5.5rem;
 
         @media (max-width: 767px) {
           height: auto;

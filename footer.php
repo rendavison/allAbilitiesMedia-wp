@@ -5,7 +5,7 @@
           <h3>Keep in touch!</h4>
           <div class="break" aria-hidden="true"></div>
           <p>
-            <a href="mailto:jennifer@unabridgedpress.com">Send us an email</a> or <a href="/get-involved">get involved.</a>
+            <a href="mailto:jennifer@unabridgedpress.com" aria-label="send us an email">Send us an email</a> or <a href="/get-involved" aria-label="get involved">get involved.</a>
           </p>
           <div class="break" aria-hidden="true"></div>
           <a href="https://www.unabridgedpress.com/">

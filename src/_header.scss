@@ -6,6 +6,7 @@
   background: transparent;
 
   @media (max-width: 768px) {
+    height: 300px;
     object-fit: cover;
   }
 
@@ -16,6 +17,10 @@
     height: 400px;
     z-index: -1;
     object-fit: cover;
+
+    @media (max-width: 767px) {
+      height: 300px;
+    }
   }
 
   h1 {
@@ -31,7 +36,11 @@
     white-space: pre-wrap;
 
     @media (max-width: 767px) {
+      @include make-col(10);
+      @include make-col-offset(1);
       text-align: center;
+      margin-top: 7rem;
+      margin-bottom: 0;
     }
   }
 }
